@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|solutionrelative:instafood.server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.server\\controllers\\cartitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|solutionrelative:instafood.server\\controllers\\cartitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|solutionrelative:instafood.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|solutionrelative:instafood.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|solutionrelative:instafood.server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE72FD62-2254-495B-BA97-4B2ECB62CB25}|InstaFood.Server\\InstaFood.Server.csproj|solutionrelative:instafood.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartItemsController.cs",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Controllers\\CartItemsController.cs",
+              "RelativeDocumentMoniker": "InstaFood.Server\\Controllers\\CartItemsController.cs",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Controllers\\CartItemsController.cs",
+              "RelativeToolTip": "InstaFood.Server\\Controllers\\CartItemsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:28:18.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "InstaFood.Server\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "InstaFood.Server\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwEsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:11:44.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "InstaFood.Server\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "InstaFood.Server\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:11:03.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "InstaFood.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "InstaFood.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-21T03:05:21.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "InstaFood.Server\\appsettings.json",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\appsettings.json",
+              "RelativeToolTip": "InstaFood.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-21T03:04:59.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Program.cs",
+              "RelativeDocumentMoniker": "InstaFood.Server\\Program.cs",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Server\\Program.cs",
+              "RelativeToolTip": "InstaFood.Server\\Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAlwEMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:04:39.804Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
