@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InstaFood.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b4e5ab53b55a2349778d465387149fd915beec42")]
 [assembly: System.Reflection.AssemblyProductAttribute("InstaFood.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InstaFood.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

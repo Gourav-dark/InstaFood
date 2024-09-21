@@ -3,6 +3,11 @@ using InstaFood.BusinessLogic.Repositories.Abstract;
 using InstaFood.DataAccess.Models;
 using InstaFood.Shared.DTO;
 using InstaFood.Shared.Wrappers;
+using Microsoft.IdentityModel.Tokens;
+using System.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace InstaFood.Server.Controllers
 {
@@ -17,23 +22,6 @@ namespace InstaFood.Server.Controllers
             _unitOfWork = unitOfWork;
             _config = config;
         }
-        //[HttpGet]
-        //public async Task<IActionResult> GetAll()
-        //{
-        //    try
-        //    {
-        //        IEnumerable<User> objs = await _unitOfWork.user.GetAllAsync();
-        //        if (objs.Count() > 0)
-        //        {
-        //            return Ok(objs);
-        //        }
-        //        return NoContent();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(ex.Message);
-        //    }
-        //}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
@@ -86,7 +74,13 @@ namespace InstaFood.Server.Controllers
             User existUser = await _unitOfWork.user.GetAsync(x => x.Email == l.Email);
             if (existUser != null && existUser.Password == l.Password) 
             {
-                return Ok(new Response<User>(existUser) { Message = "Login Successfully." });
+                return Ok(
+                    new Response<User>() 
+                    { 
+                        Message = "Login Successfully.",
+                        Token=jwtTokenGenerator(existUser.Name,existUser.Email,existUser.Role),
+                        Succeeded=true,
+                    });
             }
             return NotFound(
                 new Response<User>()
@@ -94,6 +88,27 @@ namespace InstaFood.Server.Controllers
                     Succeeded = false,
                     Message = "Account not Found."
                 });
-        }        
+        }
+        //JWT with Role Base Token Generate--------------------
+        private string jwtTokenGenerator(string? name,string? email,string? role)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:Key"]));
+            var credential = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var claims = new[]
+            {
+                    new Claim(ClaimTypes.Name, name),
+                    new Claim(ClaimTypes.Email,email),
+                    new Claim(ClaimTypes.Role,role),
+            };
+            var token = new JwtSecurityToken(
+                issuer: _config["JWT:Issuer"],
+                audience: _config["JWT:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddMinutes(30),
+                signingCredentials: credential
+                );
+            var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+            return jwt;
+        }
     }
 }
