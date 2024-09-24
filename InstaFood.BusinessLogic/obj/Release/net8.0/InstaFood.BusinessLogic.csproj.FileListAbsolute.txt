@@ -1,0 +1,16 @@
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\bin\Release\net8.0\InstaFood.BusinessLogic.deps.json
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\bin\Release\net8.0\InstaFood.BusinessLogic.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\bin\Release\net8.0\InstaFood.BusinessLogic.pdb
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\bin\Release\net8.0\InstaFood.DataAccess.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\bin\Release\net8.0\InstaFood.DataAccess.pdb
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.csproj.AssemblyReference.cache
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.AssemblyInfoInputs.cache
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.AssemblyInfo.cs
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.sourcelink.json
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFoo.54DBEE6B.Up2Date
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\refint\InstaFood.BusinessLogic.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\InstaFood.BusinessLogic.pdb
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Release\net8.0\ref\InstaFood.BusinessLogic.dll

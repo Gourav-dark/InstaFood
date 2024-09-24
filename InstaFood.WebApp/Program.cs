@@ -1,5 +1,6 @@
 using Blazored.LocalStorage;
-using InstaFood.App.Authentication;
+using InstaFood.WebApp.Authentication;
+using InstaFood.Shared.Services;
 using InstaFood.WebApp;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
@@ -9,12 +10,19 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7182/") });
+
 //add Service for AuthenticationStateProvider
 builder.Services.AddAuthorizationCore();
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 builder.Services.AddBlazoredLocalStorage();
+
+//Blazor Boostrap
+builder.Services.AddBlazorBootstrap();
+
+//Http services
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 
 await builder.Build().RunAsync();

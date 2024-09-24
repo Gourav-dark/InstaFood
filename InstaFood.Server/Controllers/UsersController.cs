@@ -45,7 +45,7 @@ namespace InstaFood.Server.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> Post(UserDTO user)
+        public async Task<IActionResult> SignUp(UserDTO user)
         {
             User existUser=await _unitOfWork.user.GetAsync(x=>x.Email==user.Email);
             string? AdminCode = _config["SecureAdmin:Code"];
@@ -86,7 +86,7 @@ namespace InstaFood.Server.Controllers
                 new Response<User>()
                 {
                     Succeeded = false,
-                    Message = "Account not Found."
+                    Message = "Incorrect email or password."
                 });
         }
         //JWT with Role Base Token Generate--------------------

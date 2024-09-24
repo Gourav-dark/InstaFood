@@ -13,3 +13,4 @@ C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Debug\net8.0\Ins
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Debug\net8.0\refint\InstaFood.BusinessLogic.dll
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Debug\net8.0\InstaFood.BusinessLogic.pdb
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Debug\net8.0\ref\InstaFood.BusinessLogic.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\obj\Debug\net8.0\InstaFood.BusinessLogic.sourcelink.json

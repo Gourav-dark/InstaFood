@@ -17,14 +17,6 @@
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
       "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
@@ -35,10 +27,6 @@
     {
       "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
-    },
-    {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InstaFood.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",

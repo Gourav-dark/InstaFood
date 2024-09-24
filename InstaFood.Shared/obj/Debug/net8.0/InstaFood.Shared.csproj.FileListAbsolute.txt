@@ -19,3 +19,7 @@ C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFood.
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\refint\InstaFood.Shared.dll
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFood.Shared.pdb
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\ref\InstaFood.Shared.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.DataAccess.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.DataAccess.pdb
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFood.Shared.sourcelink.json
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFoo.B5FB5EA9.Up2Date

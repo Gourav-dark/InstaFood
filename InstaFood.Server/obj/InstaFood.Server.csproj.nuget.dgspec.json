@@ -277,7 +277,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj": {
+                "projectPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -295,21 +299,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Blazored.LocalStorage": {
+            "Blazor.Bootstrap": {
               "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "Microsoft.AspNetCore.Components.Authorization": {
-              "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[3.0.0, )"
             },
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[8.0.8, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[8.0.2, )"
             }
           },
           "imports": [

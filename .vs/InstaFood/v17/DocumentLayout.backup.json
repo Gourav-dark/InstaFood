@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.webapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|solutionrelative:instafood.webapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|solutionrelative:instafood.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.webapp\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|solutionrelative:instafood.webapp\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|solutionrelative:instafood.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9A065C-E46A-4CFE-8707-F30600E24E3E}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,112 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\App.razor",
-              "RelativeDocumentMoniker": "InstaFood.WebApp\\App.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\App.razor",
-              "RelativeToolTip": "InstaFood.WebApp\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:34:39.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Routes.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Routes.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:34:11.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:34:08.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\_Imports.razor",
-              "RelativeDocumentMoniker": "InstaFood.Shared\\_Imports.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\_Imports.razor",
-              "RelativeToolTip": "InstaFood.Shared\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:33:51.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\_Imports.razor",
-              "RelativeDocumentMoniker": "InstaFood.WebApp\\_Imports.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\_Imports.razor",
-              "RelativeToolTip": "InstaFood.WebApp\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:33:45.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\_Imports.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\_Imports.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:32:05.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "InstaFood.App\\MauiProgram.cs",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\MauiProgram.cs",
-              "RelativeToolTip": "InstaFood.App\\MauiProgram.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:30:27.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "InstaFood.WebApp\\Program.cs",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\Program.cs",
-              "RelativeToolTip": "InstaFood.WebApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:26:49.343Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"

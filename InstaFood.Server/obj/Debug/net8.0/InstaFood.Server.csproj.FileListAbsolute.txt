@@ -152,3 +152,5 @@ C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\ru\Microso
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\obj\Debug\net8.0\InstaFood.Server.sourcelink.json

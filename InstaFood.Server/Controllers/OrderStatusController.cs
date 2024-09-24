@@ -37,5 +37,32 @@ namespace InstaFood.Server.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> get(int id)
+        {
+            try
+            {
+                var status = await _unitOfWork.orderStatus.GetAsync(x=>x.OrderStatusId==id);
+                //if (status.Count() > 0)
+                //{
+                //    return Ok(new Response<IEnumerable<OrderStatus>>(status));
+                //}
+                //return NotFound(
+                //    new Response<OrderStatus>()
+                //    {
+                //        Succeeded = false,
+                //        Message = "Id not Found."
+                //    });
+                if (status != null)
+                {
+                    return Ok(status.Status.ToString());
+                }
+                return Ok("Not Found");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

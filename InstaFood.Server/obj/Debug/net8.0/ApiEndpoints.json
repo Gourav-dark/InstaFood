@@ -253,6 +253,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "InstaFood.Server.Controllers.OrderStatusController",
+    "Method": "get",
+    "RelativePath": "api/OrderStatus/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "InstaFood.Server.Controllers.ProductsController",
     "Method": "Get",
     "RelativePath": "api/Products",
@@ -365,7 +381,7 @@
   },
   {
     "ContainingType": "InstaFood.Server.Controllers.UsersController",
-    "Method": "Post",
+    "Method": "SignUp",
     "RelativePath": "api/Users",
     "HttpMethod": "POST",
     "IsController": true,

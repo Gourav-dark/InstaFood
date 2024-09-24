@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\InstaFood.PhoneApp.props" />
+</Project>
