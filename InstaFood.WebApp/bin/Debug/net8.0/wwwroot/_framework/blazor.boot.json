@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "InstaFood.WebApp",
   "resources": {
-    "hash": "sha256-FQSQU5IUUyoPa5QP1ZuDKpnRINOINerkgApc7nssfV4=",
+    "hash": "sha256-ruDPNIv5dqG4ga72QeCw6na5Cuj6B5fE5Yl8VIQv608=",
     "jsModuleNative": {
-      "dotnet.native.8.0.8.ql38azjg7q.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
+      "dotnet.native.8.0.8.zshkqp40ob.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.8.iyvt3h6am2.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
+      "dotnet.runtime.8.0.8.qq2ayh8ajw.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE="
@@ -239,14 +239,14 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "InstaFood.DataAccess.wasm": "sha256-4G5FTlyisRd3GRoDA7z2RKi2m1Tccv2+kQrfLqDPYy8=",
-      "InstaFood.Shared.wasm": "sha256-5yJjmqFK28LGLjYRDKAQAtL02zccl49Tn3aRYaUonJs=",
-      "InstaFood.WebApp.wasm": "sha256-c4vg6nTJesq/YS4vzXpcCRkaMDlJWy8nbOucqQrtPew="
+      "InstaFood.DataAccess.wasm": "sha256-2ILfutO94Am/3goX8RvZrm5cTzXe31PTMfajUCwW0wA=",
+      "InstaFood.Shared.wasm": "sha256-z4sLLTKmqTGfqyiDBdroYaWzpPE/U7j69uQFQcCiJY0=",
+      "InstaFood.WebApp.wasm": "sha256-urZg5gBJtucX/U+RIrn7gcEJ5LUO9RSupOOE147WGVA="
     },
     "pdb": {
-      "InstaFood.Shared.pdb": "sha256-fCKFK8yJIApeUMoCgaEGYt1pP2k1KE1FPjGmpcAzCNU=",
-      "InstaFood.DataAccess.pdb": "sha256-YAlwNArbtszLLhd5BaMQviilmyssG74BBtwKC7OAFRQ=",
-      "InstaFood.WebApp.pdb": "sha256-J7Utb48bXykS4sX4JkFSMf72zcgXitdQkT/P7Yd9vYU="
+      "InstaFood.Shared.pdb": "sha256-/xxnfa6JORepG6oiAcgmL7fdhPUxAhxG3YBFr1cJs0I=",
+      "InstaFood.DataAccess.pdb": "sha256-R8kxUpvUMzIfZkRuNoxDal8SRjdoLkxYkRza0H5ANiw=",
+      "InstaFood.WebApp.pdb": "sha256-qKDfyMlAtF3l4oGCwNsRwECG8X5lWqVGFIyhd2Sfa6Q="
     }
   },
   "cacheBootResources": true,

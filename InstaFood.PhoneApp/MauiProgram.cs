@@ -1,5 +1,6 @@
 ﻿using InstaFood.PhoneApp.Authentication;
 using InstaFood.PhoneApp.Services;
+using InstaFood.Shared.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.Extensions.Logging;
 
@@ -17,7 +18,7 @@ namespace InstaFood.PhoneApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
             builder.Services.AddHttpClient();
-            //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7182/") });
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://www.instafood.somee.com/") });
             builder.Services.AddMauiBlazorWebView();
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 
@@ -25,8 +26,8 @@ namespace InstaFood.PhoneApp
             builder.Services.AddBlazorBootstrap();
             builder.Services.AddAuthorizationCore();
             // Http Services
-            //builder.Services.AddScoped<IAuthService, AuthService>();
-            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            //builder.Services.AddScoped<IUserService, UserService>();
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();

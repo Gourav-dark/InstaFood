@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Content Include="Resources\Raw\AboutAssets.txt" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\Blazor.Bootstrap.bundle.scp.css" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\blazor.bootstrap.css" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\blazor.bootstrap.js" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\blazor.bootstrap.pdf.js" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\blazor.bootstrap.sortable-list.js" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\icon\128X128.png" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\pdfjs-4.0.379.min.js" />
+    <Content Include="C:\Users\GOURAV SHARMA\.nuget\packages\blazor.bootstrap\3.0.0\staticwebassets\pdfjs-4.0.379.worker.min.js" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\obj\Release\net8.0-maccatalyst\scopedcss\bundle\InstaFood.PhoneApp.styles.css" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\obj\Release\net8.0-maccatalyst\scopedcss\projectbundle\InstaFood.PhoneApp.bundle.scp.css" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\wwwroot\css\app.css" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\wwwroot\css\bootstrap\bootstrap.min.css" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\wwwroot\favicon.png" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.PhoneApp\wwwroot\index.html" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.Shared\wwwroot\background.png" />
+    <Content Include="D:\CV_Projects\InstaFood\InstaFood.Shared\wwwroot\exampleJsInterop.js" />
+  </ItemGroup>
+</Project>

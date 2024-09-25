@@ -1,3 +1,11 @@
+wwwroot\_content\Blazor.Bootstrap\Blazor.Bootstrap.bundle.scp.css
+wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.css
+wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.js
+wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.pdf.js
+wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.sortable-list.js
+wwwroot\_content\Blazor.Bootstrap\icon\128X128.png
+wwwroot\_content\Blazor.Bootstrap\pdfjs-4.0.379.min.js
+wwwroot\_content\Blazor.Bootstrap\pdfjs-4.0.379.worker.min.js
 Components\Layout\MainLayout.razor.css
 Components\Layout\NavMenu.razor.css
 OpenSans-Regular.ttf
@@ -67,11 +75,3 @@ wwwroot\favicon.png
 wwwroot\index.html
 wwwroot\_content\InstaFood.Shared\background.png
 wwwroot\_content\InstaFood.Shared\exampleJsInterop.js
-wwwroot\_content\Blazor.Bootstrap\Blazor.Bootstrap.bundle.scp.css
-wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.css
-wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.js
-wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.pdf.js
-wwwroot\_content\Blazor.Bootstrap\blazor.bootstrap.sortable-list.js
-wwwroot\_content\Blazor.Bootstrap\icon\128X128.png
-wwwroot\_content\Blazor.Bootstrap\pdfjs-4.0.379.min.js
-wwwroot\_content\Blazor.Bootstrap\pdfjs-4.0.379.worker.min.js

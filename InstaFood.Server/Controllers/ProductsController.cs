@@ -165,36 +165,5 @@ namespace InstaFood.Server.Controllers
                     Message = "Id not Found."
                 });
         }
-        //[HttpPut("image/{id}")]
-        //public async Task<IActionResult> ImageUplaod(int id,[FromForm]IFormFile file)
-        //{
-        //    try
-        //    {
-        //        Product existProduct = await _unitOfWork.product.GetAsync(x => x.ProductId == id);
-        //        if (file != null && file.Length > 0 && existProduct!=null) 
-        //        {
-        //            string fileName = "product_" + id.ToString() + Path.GetExtension(file.FileName);
-        //            string productPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "product", fileName);
-        //            if (System.IO.File.Exists(productPath))
-        //            {
-        //                System.IO.File.Delete(productPath);
-        //            }
-        //            using (var stream = new FileStream(productPath, FileMode.Create))
-        //            {
-        //                file.CopyTo(stream);
-        //            }
-        //            existProduct.ProductName = fileName;
-        //            await _unitOfWork.product.Update(existProduct);
-        //            await _unitOfWork.Save();
-        //            return Ok(new { message = "Image Uploaded successfully." });
-        //        }
-        //        return NotFound();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(ex.Message);
-        //    }
-
-        //}
     }
 }

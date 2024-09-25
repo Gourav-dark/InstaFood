@@ -22,7 +22,7 @@ namespace InstaFood.Server.Controllers
             _uriService = uriService;
         }
         [HttpGet]
-        [Authorize(Roles ="Customer")]
+        //[Authorize(Roles ="Customer")]
         public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string customerId = null)
         {
             var route = Request.Path.Value;

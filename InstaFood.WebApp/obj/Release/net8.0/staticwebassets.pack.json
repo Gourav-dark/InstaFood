@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\bin\\Release\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\obj\\Release\\net8.0\\compressed\\woyrm5bmxy.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\obj\\Release\\net8.0\\scopedcss\\bundle\\InstaFood.WebApp.styles.css",
+      "PackagePath": "staticwebassets\\InstaFood.WebApp.styles.css"
+    },
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.InstaFood.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.InstaFood.WebApp.props",
+      "PackagePath": "build\\InstaFood.WebApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.InstaFood.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\InstaFood.WebApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.InstaFood.WebApp.props",
+      "PackagePath": "buildTransitive\\InstaFood.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

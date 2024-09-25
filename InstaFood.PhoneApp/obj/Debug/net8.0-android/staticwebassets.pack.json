@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.PhoneApp\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\InstaFood.PhoneApp.styles.css",
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\InstaFood.PhoneApp.styles.css",
       "PackagePath": "staticwebassets\\InstaFood.PhoneApp.styles.css"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\css\\app.css",
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\favicon.png",
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\index.html",
+      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
