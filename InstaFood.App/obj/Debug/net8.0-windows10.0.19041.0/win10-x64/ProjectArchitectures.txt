@@ -1,0 +1,1 @@
+C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.App\InstaFood.App.csproj;x64

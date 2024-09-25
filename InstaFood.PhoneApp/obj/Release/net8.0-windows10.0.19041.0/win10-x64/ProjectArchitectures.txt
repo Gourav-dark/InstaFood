@@ -1,1 +1,0 @@
-D:\CV_Projects\InstaFood\InstaFood.PhoneApp\InstaFood.PhoneApp.csproj;x64

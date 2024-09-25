@@ -1,52 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CV_Projects\\InstaFood\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|d:\\cv_projects\\instafood\\instafood.shared\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|solutionrelative:instafood.shared\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\instafood.phoneapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\instafood.phoneapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|d:\\cv_projects\\instafood\\instafood.webapp\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|solutionrelative:instafood.webapp\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|d:\\cv_projects\\instafood\\instafood.phoneapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{41C51695-6417-4DFE-AB20-6E9A47FEE67D}|InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj|solutionrelative:instafood.phoneapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|d:\\cv_projects\\instafood\\instafood.webapp\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{646857D0-4A7C-4F45-922A-EA8303753026}|InstaFood.WebApp\\InstaFood.WebApp.csproj|solutionrelative:instafood.webapp\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -54,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,149 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.Shared\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "InstaFood.Shared\\Services\\AuthService.cs",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.Shared\\Services\\AuthService.cs",
-              "RelativeToolTip": "InstaFood.Shared\\Services\\AuthService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:52:48.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\Services\\IUserService.cs",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Services\\IUserService.cs",
-              "RelativeToolTip": "InstaFood.PhoneApp\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:50:00.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InstaFood.PhoneApp",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj",
-              "RelativeToolTip": "InstaFood.PhoneApp\\InstaFood.PhoneApp.csproj",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEIAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-25T10:48:50.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\Services\\UserService.cs",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Services\\UserService.cs",
-              "RelativeToolTip": "InstaFood.PhoneApp\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:47:53.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "InstaFood.PhoneApp\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:47:08.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "InstaFood.PhoneApp\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:47:06.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\MauiProgram.cs",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\MauiProgram.cs",
-              "RelativeToolTip": "InstaFood.PhoneApp\\MauiProgram.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:46:28.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.razor",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\Pages\\Account\\Login.razor",
-              "RelativeDocumentMoniker": "InstaFood.WebApp\\Pages\\Account\\Login.razor",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\Pages\\Account\\Login.razor",
-              "RelativeToolTip": "InstaFood.WebApp\\Pages\\Account\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:46:14.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.razor",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\Pages\\Account\\Login.razor",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\Components\\Pages\\Account\\Login.razor",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\Pages\\Account\\Login.razor",
-              "RelativeToolTip": "InstaFood.PhoneApp\\Components\\Pages\\Account\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:46:04.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\_Imports.razor",
-              "RelativeDocumentMoniker": "InstaFood.WebApp\\_Imports.razor",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.WebApp\\_Imports.razor",
-              "RelativeToolTip": "InstaFood.WebApp\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:45:30.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "InstaFood.PhoneApp\\Components\\_Imports.razor",
-              "ToolTip": "D:\\CV_Projects\\InstaFood\\InstaFood.PhoneApp\\Components\\_Imports.razor",
-              "RelativeToolTip": "InstaFood.PhoneApp\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T10:44:57.857Z",
-              "EditorCaption": ""
             }
           ]
         }

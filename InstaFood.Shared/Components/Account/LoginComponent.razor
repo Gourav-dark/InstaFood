@@ -38,13 +38,9 @@
         Password="123455"
     };
     public string? errorMessage;
-    [Inject] protected PreloadService PreloadService { get; set; } = default!;
-
     private async Task LoginAuthenticate()
     {
-        PreloadService.Show();
         Response<User> response = await _authService.Login(loginModel);
-        PreloadService.Hide();
         if (!response.Succeeded)
         {
             errorMessage = "Incorrect email or password";
