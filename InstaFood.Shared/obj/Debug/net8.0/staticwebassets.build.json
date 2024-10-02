@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vtbwg4ZEVZkdIApB/vlWUWgFdnBPrMwarCA1ZopyBCA=",
+  "Hash": "42HwrqCbLJMqGT2NsKaHFy5s+XGdyVjqY2ovtb2BCoc=",
   "Source": "InstaFood.Shared",
   "BasePath": "_content/InstaFood.Shared",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "InstaFood.Shared\\wwwroot",
       "Source": "InstaFood.Shared",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
       "SourceId": "InstaFood.Shared",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
       "SourceId": "InstaFood.Shared",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",

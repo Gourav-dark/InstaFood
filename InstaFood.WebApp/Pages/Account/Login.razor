@@ -1,3 +1,13 @@
 ﻿@page "/login"
 <PageTitle>Login</PageTitle>
-<LoginComponent></LoginComponent>
+<LoginComponent HandleToken="getToken"></LoginComponent>
+<p>@jwtToken</p>
+@code {
+    private string? jwtToken;
+    private void getToken(string token)
+    {
+        jwtToken = token;
+    }
+    // var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+    // await customAuthStateProvider.UpdateAuthenticationState(response.Token);
+}

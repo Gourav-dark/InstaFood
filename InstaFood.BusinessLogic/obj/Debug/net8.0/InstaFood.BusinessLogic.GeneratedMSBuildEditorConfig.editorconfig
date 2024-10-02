@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InstaFood.BusinessLogic
-build_property.ProjectDir = C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.BusinessLogic\
+build_property.ProjectDir = C:\GS_Practice\Blazor-App\InstaFood\InstaFood.BusinessLogic\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

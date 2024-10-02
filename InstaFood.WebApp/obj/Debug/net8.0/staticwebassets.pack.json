@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\obj\\Debug\\net8.0\\compressed\\w99jphqud3.gz",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\obj\\Debug\\net8.0\\compressed\\w99jphqud3.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InstaFood.WebApp.styles.css",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InstaFood.WebApp.styles.css",
       "PackagePath": "staticwebassets\\InstaFood.WebApp.styles.css"
     },
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\wwwroot\\css\\app.css",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\wwwroot\\favicon.png",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\wwwroot\\icon-192.png",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.WebApp\\wwwroot\\index.html",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.WebApp\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

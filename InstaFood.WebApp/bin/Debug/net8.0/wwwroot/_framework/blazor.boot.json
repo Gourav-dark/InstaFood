@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "InstaFood.WebApp",
   "resources": {
-    "hash": "sha256-ou0IxO7g/mNKQyCC5cIwr4x+td2b9JkDG+zdavKqFMc=",
+    "hash": "sha256-hTm6Fcb6U1clv9RC2VSNRDCyz8WEXP3RM/WqJZGtzFI=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.ql38azjg7q.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -239,14 +239,14 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "InstaFood.DataAccess.wasm": "sha256-35risx6pQnqBPBoYRAm3u5vh4CN1/lMq78ycXHicDx0=",
-      "InstaFood.Shared.wasm": "sha256-U4AnRsumgN5bPnX1PoLydNNAoSFuvIrXIKp5Dyctolc=",
-      "InstaFood.WebApp.wasm": "sha256-M19H/tckpghtT/m2zPj2yd6zu/SL/AV68oD7acA9sjM="
+      "InstaFood.DataAccess.wasm": "sha256-Ii3SvE5t+bipVgOmxy6SGUQIrJMhAL8RNja02dYpmzQ=",
+      "InstaFood.Shared.wasm": "sha256-oG3YV+p1JMgat62hgYesslrJMym+SA0MRrvOR0btV7A=",
+      "InstaFood.WebApp.wasm": "sha256-gkbhXEwnv/lwQIv6t3ec03m6peqeyg9/aUPrrg5lCr0="
     },
     "pdb": {
-      "InstaFood.Shared.pdb": "sha256-zxcjnqf1uuij2Xb4e/+/HMV36Ut4CbC+QScTJB9PcSs=",
-      "InstaFood.DataAccess.pdb": "sha256-ujhspED3OqezyPVLQLTZ0+AVNuYGkdkAW+sxNeJfBS8=",
-      "InstaFood.WebApp.pdb": "sha256-nCws7NGN3JpoZf5wdUOu3T0lySSny8rwT7erKvp0r8c="
+      "InstaFood.Shared.pdb": "sha256-ywRBZeWigGFMHuMQxp8/ByxEGhsggeb6ryHpC/Gj5jU=",
+      "InstaFood.DataAccess.pdb": "sha256-Ill6efz7oB85GKhjxORhrplc5NlglIkCTRV/HbxXiEc=",
+      "InstaFood.WebApp.pdb": "sha256-Z73F/GC/XXrfUzaD3P2USSS0l/nDkRhBfzGB2senXvY="
     }
   },
   "cacheBootResources": true,

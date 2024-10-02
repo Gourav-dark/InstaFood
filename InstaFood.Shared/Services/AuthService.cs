@@ -27,9 +27,16 @@ namespace InstaFood.Shared.Services
         }
         public async Task<Response<User>> SignUp(UserDTO obj)
         {
-            var response = await _httpClient.PostAsJsonAsync("/users", obj);
-            var result = await response.Content.ReadFromJsonAsync<Response<User>>();
-            return result;
+            try
+            {
+                var response = await _httpClient.PostAsJsonAsync<UserDTO>("/api/users", obj);
+                var result = await response.Content.ReadFromJsonAsync<Response<User>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

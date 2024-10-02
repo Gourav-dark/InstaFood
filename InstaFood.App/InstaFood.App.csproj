@@ -72,4 +72,8 @@
       <ProjectReference Include="..\InstaFood.Shared\InstaFood.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\assets\" />
+    </ItemGroup>
+
 </Project>

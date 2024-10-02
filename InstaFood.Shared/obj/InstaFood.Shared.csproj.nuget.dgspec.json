@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj": {}
+    "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj": {}
   },
   "projects": {
-    "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj": {
+    "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj",
+        "projectUniqueName": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj",
         "projectName": "InstaFood.DataAccess",
-        "projectPath": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj",
+        "projectPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj",
         "packagesPath": "C:\\Users\\2270340\\.nuget\\packages\\",
-        "outputPath": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.DataAccess\\obj\\",
+        "outputPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj": {
+    "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
+        "projectUniqueName": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
         "projectName": "InstaFood.Shared",
-        "projectPath": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
+        "projectPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
         "packagesPath": "C:\\Users\\2270340\\.nuget\\packages\\",
-        "outputPath": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\obj\\",
+        "outputPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -110,8 +110,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj": {
-                "projectPath": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj"
+              "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj": {
+                "projectPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.DataAccess\\InstaFood.DataAccess.csproj"
               }
             }
           }

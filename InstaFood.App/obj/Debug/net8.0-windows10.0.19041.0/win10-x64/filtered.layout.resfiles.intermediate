@@ -64,6 +64,10 @@ wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\icons\cart.svg
+wwwroot\icons\house-door.svg
+wwwroot\icons\list.svg
+wwwroot\icons\person.svg
 wwwroot\index.html
 wwwroot\_content\InstaFood.Shared\background.png
 wwwroot\_content\InstaFood.Shared\exampleJsInterop.js

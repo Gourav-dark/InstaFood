@@ -1,32 +1,44 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">InstaFood.App</a>
-    </div>
-</div>
-
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
+﻿
+<AuthorizeView>
+    <Authorized>
+        <div class="fixed-bottom px-2 pb-2">
+            <nav class="d-flex justify-content-around align-items-center text-capitalize py-3 menu-list rounded-pill shadow-lg">
+                <NavLink href="" Match="NavLinkMatch.All" class="d-flex flex-column align-items-center text-decoration-none menu-item">
+                    <span>
+                        <img height="35" width="35" src="icons/house-door.svg" />
+                    </span>
+                </NavLink>
+                <NavLink href="profile" class="d-flex flex-column align-items-center  text-decoration-none">
+                    <span>
+                        <img height="35" width="35" src="icons/person.svg" />
+                    </span>
+                </NavLink>
+                <NavLink href="cart" class="d-flex flex-column align-items-center text-white  text-decoration-none menu-item">
+                    <span>
+                        <img height="35" width="35" src="icons/cart.svg" />
+                    </span>
+                </NavLink>
+                <NavLink href="login" class="d-flex flex-column align-items-center text-white  text-decoration-none menu-item">
+                    <span>
+                        <img height="35" width="35" src="icons/list.svg" />
+                    </span>
+                </NavLink>
+            </nav>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
+    </Authorized>
+    <NotAuthorized>
+        <div class="auth-nav shadow d-flex flex-column">
+            <div class="top-part d-flex justify-content-center align-items-center p-5" style="height:250px;">
+                <img height="275" width="275" src="assets/image.svg"/>
+            </div>
+            <div class="text-capitalize d-flex flex-row justify-content-evenly align-content-center fs-5 py-2">
+                <NavLink href="/signup" class="auth-item text-decoration-none">
+                        signup
+                </NavLink>
+                <NavLink href="/login" class="auth-item text-decoration-none">
+                        Login
+                </NavLink>
+            </div>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="login">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span>Login
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    </NotAuthorized>
+</AuthorizeView>

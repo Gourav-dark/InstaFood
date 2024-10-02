@@ -21,6 +21,22 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\cart.svg",
+      "PackagePath": "staticwebassets\\icons\\cart.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\house-door.svg",
+      "PackagePath": "staticwebassets\\icons\\house-door.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\list.svg",
+      "PackagePath": "staticwebassets\\icons\\list.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\person.svg",
+      "PackagePath": "staticwebassets\\icons\\person.svg"
+    },
+    {
       "Id": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

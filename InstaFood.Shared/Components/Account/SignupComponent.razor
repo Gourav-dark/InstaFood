@@ -1,0 +1,69 @@
+﻿@inject IAuthService _authService
+<div class="mt-4 mx-5">
+    <EditForm class="" Model="@signupModel" OnValidSubmit="SignupAuthenticate" FormName="SignupFrom">
+        <DataAnnotationsValidator />
+        <div class="mb-2">
+            <label class="ms-3 mb-1 fw-semibold fs-6">
+                Name
+            </label>
+            <InputText class="form-control rounded-pill ps-3" @bind-Value="signupModel.Name" placeholder="Enter the Name" />
+        </div>
+        <div class="mb-2">
+            <label class="ms-3 mb-1 fw-semibold fs-6">
+                Email Address
+            </label>
+            <InputText class="form-control rounded-pill ps-3" @bind-Value="signupModel.Email" placeholder="Enter the Email" />
+        </div>
+        <div class="mb-2">
+            <label class="ms-3 mb-1 fw-semibold fs-6">
+                Password
+            </label>
+            <InputText type="password" class="form-control rounded-pill ps-3" @bind-Value="signupModel.Password" placeholder="Enter the Password" />
+        </div>
+        @if (IsAccessCode)
+        {
+            <div class="mb-2 mt-1">
+                <label class="ms-3 mb-1 fw-semibold fs-6">
+                    Access Code
+                </label>
+                <InputText class="form-control rounded-pill ps-3" @bind-Value="signupModel.AdminCode" placeholder="Enter the Code" />
+            </div>
+        }
+        <div class="ms-3 form-check">
+            <InputCheckbox @bind-Value="IsAccessCode" class="form-check-input" />
+            <label class="form-check-label ms-1 fw-semibold fs-6" for="flexCheckChecked">
+                Is Administrator
+            </label>
+        </div>
+        <div class="mb-2 text-center">
+            <span class="text-danger">@errorMessage</span>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="mx-2 btn btn-primary py-2 px-5 rounded-pill">Create Account</button>
+        </div>
+    </EditForm>
+</div>
+@code {
+    // [Parameter] public EventCallback<string> HandleToken { get; set; }
+    private UserDTO signupModel { get; set; } = new()
+    {
+        Email="abc@gmail.com",
+        Name="Rohan",
+        Password="12345"
+    };
+    private bool IsAccessCode { get; set; } = false;
+    private string? errorMessage;
+    private async Task SignupAuthenticate()
+    {
+        Response<User> response = await _authService.SignUp(signupModel);
+        if (!response.Succeeded)
+        {
+            errorMessage = response.Message;
+            return;
+        }
+        errorMessage = response.Message;
+        // await HandleToken.InvokeAsync(response.Token);
+        // loginModel = new LoginDTO();
+        signupModel = new();
+    }
+}
