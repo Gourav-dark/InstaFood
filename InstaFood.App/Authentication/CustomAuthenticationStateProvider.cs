@@ -6,6 +6,11 @@ namespace InstaFood.App.Authentication
 {
     public class CustomAuthenticationStateProvider : AuthenticationStateProvider
     {
+        //private readonly HttpClient _httpClient;
+        //public CustomAuthenticationStateProvider(HttpClient httpClient)
+        //{
+        //    _httpClient = httpClient;
+        //}
         private ClaimsPrincipal anonymous = new ClaimsPrincipal(new ClaimsIdentity());
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {

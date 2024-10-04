@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Content Include="Resources\Raw\AboutAssets.txt" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Release\net8.0-maccatalyst\scopedcss\bundle\InstaFood.App.styles.css" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Release\net8.0-maccatalyst\scopedcss\projectbundle\InstaFood.App.bundle.scp.css" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\assets\image.svg" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\css\app.css" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\css\bootstrap\bootstrap.min.css" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\favicon.png" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\icons\cart.svg" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\icons\house-door.svg" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\icons\list.svg" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\icons\person.svg" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\index.html" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\wwwroot\background.png" />
+    <Content Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\wwwroot\exampleJsInterop.js" />
+  </ItemGroup>
+</Project>

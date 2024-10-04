@@ -18,7 +18,7 @@
             <span class="text-danger">@errorMessage</span>
         </div>
         <div class="d-flex justify-content-center">
-            <button type="submit" class="mx-2 btn btn-primary py-2 px-6 rounded-pill">Login</button>
+            <button type="submit" class="mx-2 btn btn-primary py-2 px-6 rounded-pill text-uppercase">Login</button>
         </div>
     </EditForm>
 </div>
@@ -38,8 +38,7 @@
             errorMessage = response.Message;
             return;
         }
-        errorMessage = response.Message;
-        await HandleToken.InvokeAsync(response.Token);
         loginModel = new LoginDTO();
+        await HandleToken.InvokeAsync(response.Token);
     }
 }

@@ -1,12 +1,12 @@
 ﻿@page "/login"
+@inject NavigationManager _nav
+@inject AuthenticationStateProvider authStateProvider
 <LoginComponent HandleToken="getToken"></LoginComponent>
-<p>@jwtToken</p>
 @code {
-    private string? jwtToken;
-    private void getToken(string token)
+    private async Task getToken(string token)
     {
-        jwtToken = token;
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(token);
+        _nav.NavigateTo("/");
     }
-    // var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
-    // await customAuthStateProvider.UpdateAuthenticationState(response.Token);
 }

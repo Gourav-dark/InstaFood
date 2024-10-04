@@ -1,14 +1,12 @@
 ﻿using InstaFood.BusinessLogic.Repositories.Abstract;
 using InstaFood.DataAccess.Models;
 using InstaFood.Shared.DTO;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using InstaFood.Server.Filter;
 using InstaFood.Server.Helper;
-using Microsoft.EntityFrameworkCore;
 using InstaFood.Server.Services;
 using InstaFood.Shared.Wrappers;
-using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InstaFood.Server.Controllers
 {
@@ -24,6 +22,7 @@ namespace InstaFood.Server.Controllers
             _uriService = uriService;
         }
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string filter=null)
         {
             var route = Request.Path.Value;
@@ -47,7 +46,7 @@ namespace InstaFood.Server.Controllers
                             .ToList();
 
             var totalRecords = filteredProducts.Count();
-            var pagedResponse = PaginationHelper.CreatePagedResponse<Product>(pagedData, validFilter, totalRecords, _uriService, route);
+            var pagedResponse = PaginationHelper.CreatePagedResponse<Product>(pagedData, validFilter, totalRecords, _uriService, route,filter);
 
             return Ok(pagedResponse);
         }
@@ -69,6 +68,7 @@ namespace InstaFood.Server.Controllers
 
         }
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Post(ProductDTO obj)
         {
             try
@@ -78,7 +78,8 @@ namespace InstaFood.Server.Controllers
                     ProductName = obj.ProductName,
                     ProductDescription = obj.ProductDescription,
                     UnitPrice = obj.UnitPrice,
-                    ProductPicture=obj.ImageUrl
+                    ProductPicture=obj.ImageUrl,
+                    NonVeg=obj.NonVeg,
                 };
                 await _unitOfWork.product.AddAsync(newProduct);
                 await _unitOfWork.Save();
@@ -96,6 +97,7 @@ namespace InstaFood.Server.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Put(int id, ProductDTO obj)
         {
             Product existProduct = await _unitOfWork.product.GetAsync(x => x.ProductId == id);
@@ -104,6 +106,7 @@ namespace InstaFood.Server.Controllers
                 existProduct.ProductName = obj.ProductName;
                 existProduct.ProductDescription = obj.ProductDescription;
                 existProduct.UnitPrice = obj.UnitPrice;
+                existProduct.NonVeg = obj.NonVeg;
                 await _unitOfWork.product.Update(existProduct);
                 await _unitOfWork.Save();
                 return Ok(
@@ -121,6 +124,7 @@ namespace InstaFood.Server.Controllers
                });
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             Product existProduct = await _unitOfWork.product.GetAsync(x => x.ProductId == id);
@@ -143,6 +147,7 @@ namespace InstaFood.Server.Controllers
                 });
         }
         [HttpDelete("isAvailable/{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> isAvailable(int id)
         {
             Product existProduct = await _unitOfWork.product.GetAsync(x => x.ProductId == id);

@@ -8,6 +8,10 @@ using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using InstaFood.Server.Filter;
+using InstaFood.Server.Helper;
+using InstaFood.Server.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InstaFood.Server.Controllers
 {
@@ -17,12 +21,33 @@ namespace InstaFood.Server.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _config;
-        public UsersController(IUnitOfWork unitOfWork,IConfiguration config)
+        private readonly IUriService _uriService;
+        public UsersController(IUnitOfWork unitOfWork,IConfiguration config,IUriService uriService)
         {
             _unitOfWork = unitOfWork;
             _config = config;
+            _uriService=uriService;
+        }
+        [HttpGet]
+        [Authorize(Roles ="Admin")]
+        public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter)
+        {
+            var route = Request.Path.Value;
+            var validFilter = new PaginationFilter(pageFilter.PageNumber, pageFilter.PageSize);
+
+            var allUsers = (await _unitOfWork.user.GetAllAsync());
+            var pagedData = allUsers
+                            .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+                            .Take(validFilter.PageSize)
+                            .ToList();
+
+            var totalRecords = allUsers.Count();
+            var pagedResponse = PaginationHelper.CreatePagedResponse<User>(pagedData, validFilter, totalRecords, _uriService, route);
+
+            return Ok(pagedResponse);
         }
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetById(string id)
         {
             try
@@ -45,17 +70,18 @@ namespace InstaFood.Server.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> SignUp(UserDTO user)
+        [AllowAnonymous]
+        public async Task<IActionResult> SignUp(UserDTO obj)
         {
-            User existUser=await _unitOfWork.user.GetAsync(x=>x.Email==user.Email);
+            User existUser=await _unitOfWork.user.GetAsync(x=>x.Email==obj.Email);
             string? AdminCode = _config["SecureAdmin:Code"];
             if (existUser == null)
             {
                 User newUser = new User() {
-                     Email = user.Email,
-                     Name = user.Name,
-                     Password = user.Password,
-                     Role = (AdminCode==user.AdminCode)?"Admin":"Customer"
+                     Email = obj.Email.ToLower(),
+                     Name = obj.Name.ToLower(),
+                     Password = obj.Password,
+                     Role = (AdminCode==obj.AdminCode)?"Admin":"Customer"
                 };
                 await _unitOfWork.user.AddAsync(newUser);
                 await _unitOfWork.Save();
@@ -69,10 +95,11 @@ namespace InstaFood.Server.Controllers
                 });
         }
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginDTO l)
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(LoginDTO obj)
         {
-            User existUser = await _unitOfWork.user.GetAsync(x => x.Email == l.Email);
-            if (existUser != null && existUser.Password == l.Password) 
+            User existUser = await _unitOfWork.user.GetAsync(x => x.Email == obj.Email.ToLower());
+            if (existUser != null && existUser.Password == obj.Password) 
             {
                 return Ok(
                     new Response<User>() 

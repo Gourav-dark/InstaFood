@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "+hPqMAqMsN4tGadMVggh+fpYsCjeRZ9NkTM0XCtwbxQ=",
+  "Hash": "FZiP1MZQApbORYbrwlqASOcBzRaxP2msNAR35dU+d5Q=",
   "Source": "InstaFood.App",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
       "Version": 2,
       "Source": "InstaFood.Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,24 +22,24 @@
     {
       "Name": "InstaFood.App\\wwwroot",
       "Source": "InstaFood.App",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     },
     {
       "Name": "InstaFood.Shared\\wwwroot",
       "Source": "InstaFood.Shared",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\InstaFood.App.styles.css",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\InstaFood.App.styles.css",
       "SourceId": "InstaFood.App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "InstaFood.App.styles.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\InstaFood.App.styles.css"
+      "OriginalItemSpec": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\bundle\\InstaFood.App.styles.css"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\projectbundle\\InstaFood.App.bundle.scp.css",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\projectbundle\\InstaFood.App.bundle.scp.css",
       "SourceId": "InstaFood.App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "InstaFood.App.bundle.scp.css",
       "AssetKind": "All",
@@ -71,13 +71,32 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\projectbundle\\InstaFood.App.bundle.scp.css"
+      "OriginalItemSpec": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Debug\\net8.0-ios\\iossimulator-x64\\scopedcss\\projectbundle\\InstaFood.App.bundle.scp.css"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\css\\app.css",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\assets\\image.svg",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/image.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image.svg"
+    },
+    {
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\app.css",
+      "SourceId": "InstaFood.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -93,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -131,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\favicon.png",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\favicon.png",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -150,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\cart.svg",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\cart.svg",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "icons/cart.svg",
       "AssetKind": "All",
@@ -169,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\icons\\cart.svg"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\house-door.svg",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\house-door.svg",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "icons/house-door.svg",
       "AssetKind": "All",
@@ -188,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\icons\\house-door.svg"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\list.svg",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\list.svg",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "icons/list.svg",
       "AssetKind": "All",
@@ -207,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\icons\\list.svg"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\icons\\person.svg",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\person.svg",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "icons/person.svg",
       "AssetKind": "All",
@@ -226,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\icons\\person.svg"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\index.html",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\index.html",
       "SourceId": "InstaFood.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.App\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -245,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
       "SourceId": "InstaFood.Shared",
       "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -264,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
       "SourceId": "InstaFood.Shared",
       "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",

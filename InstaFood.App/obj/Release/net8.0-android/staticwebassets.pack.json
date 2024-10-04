@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\obj\\Release\\net8.0-android\\scopedcss\\bundle\\InstaFood.App.styles.css",
+      "PackagePath": "staticwebassets\\InstaFood.App.styles.css"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\assets\\image.svg",
+      "PackagePath": "staticwebassets\\assets\\image.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\cart.svg",
+      "PackagePath": "staticwebassets\\icons\\cart.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\house-door.svg",
+      "PackagePath": "staticwebassets\\icons\\house-door.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\list.svg",
+      "PackagePath": "staticwebassets\\icons\\list.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\icons\\person.svg",
+      "PackagePath": "staticwebassets\\icons\\person.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net8.0-android\\staticwebassets\\msbuild.InstaFood.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0-android\\staticwebassets\\msbuild.build.InstaFood.App.props",
+      "PackagePath": "build\\InstaFood.App.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.InstaFood.App.props",
+      "PackagePath": "buildMultiTargeting\\InstaFood.App.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.InstaFood.App.props",
+      "PackagePath": "buildTransitive\\InstaFood.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

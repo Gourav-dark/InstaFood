@@ -7,7 +7,6 @@
 }
 
 .body {
-    height:100vh;
     background-color: var(--secondary-white);
 }
 /*Custom css is above*/
@@ -72,24 +71,39 @@
     }
 }
 /*Custom CSS*/
-.menu-list {
+.bg-white{
+    background-color: var(--primary-white);
+}
+.bg-white-secondary {
     background-color: var(--secondary-white);
 }
+.text-dark {
+    color: var(--primary-dark);
+}
+.text-color{
+    color:var(--secondary-color);
+}
+.bg-color{
+    background-color:var(--primary-color);
+}
+.px-6 {
+    padding: 0 5rem;
+}
+.border-rounded{
+    border-radius:20px;
+}
+
 .menu-item.active::after {
     content: '';
     background-color: var(--secondary-color);
-    height: 4px;
+    height: 3px;
     border-radius: 3px;
-    width: 80%;
+    width: 60%;
 }
 .auth-nav {
-    /*    border-radius: 30px;*/
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     background-color: var(--primary-white);
-}
-.auth-item{
-    color:var(--primary-dark) !important;
 }
 .auth-item.active{
     color:var(--secondary-color)!important;
@@ -120,7 +134,4 @@
 .btn-primary.focus {
     background-color: var(--secondary-color);
     box-shadow: 0 0 0 .2rem var(--secondary-white);
-}
-.px-6{
-    padding:0 5rem;
 }

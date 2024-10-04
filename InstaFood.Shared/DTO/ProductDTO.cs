@@ -11,5 +11,7 @@ namespace InstaFood.Shared.DTO
         public float UnitPrice { get; set; }
         [Required]
         public string? ImageUrl { get; set; }
+        [Required]
+        public bool NonVeg {  get; set; }=false;
     }
 }

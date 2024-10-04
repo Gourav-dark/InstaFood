@@ -1,8 +1,8 @@
 ﻿
 <AuthorizeView>
     <Authorized>
-        <div class="fixed-bottom px-2 pb-2">
-            <nav class="d-flex justify-content-around align-items-center text-capitalize py-3 menu-list rounded-pill shadow-lg">
+        <div class="fixed-bottom px-2 pb-1">
+            <nav class="d-flex justify-content-around align-items-center text-capitalize py-3 menu-list rounded-pill shadow bg-white">
                 <NavLink href="" Match="NavLinkMatch.All" class="d-flex flex-column align-items-center text-decoration-none menu-item">
                     <span>
                         <img height="35" width="35" src="icons/house-door.svg" />
@@ -28,14 +28,14 @@
     </Authorized>
     <NotAuthorized>
         <div class="auth-nav shadow d-flex flex-column">
-            <div class="top-part d-flex justify-content-center align-items-center p-5" style="height:250px;">
+            <div class="d-flex justify-content-center align-items-center p-5" style="height:250px;">
                 <img height="275" width="275" src="assets/image.svg"/>
             </div>
             <div class="text-capitalize d-flex flex-row justify-content-evenly align-content-center fs-5 py-2">
-                <NavLink href="/signup" class="auth-item text-decoration-none">
+                <NavLink href="/signup" class="auth-item text-decoration-none text-dark">
                         signup
                 </NavLink>
-                <NavLink href="/login" class="auth-item text-decoration-none">
+                <NavLink href="/login" class="auth-item text-decoration-none text-dark">
                         Login
                 </NavLink>
             </div>

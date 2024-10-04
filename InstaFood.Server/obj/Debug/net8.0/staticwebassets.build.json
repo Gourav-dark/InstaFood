@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "+8TUqfnnETEBAPuRkKM4IqV0IhdpnRg95ifC6JRPpyQ=",
+  "Hash": "yyY0aWc11FGcvpCL3EkUq63hwH76V8F4pXoIodJ3NDs=",
   "Source": "InstaFood.Server",
   "BasePath": "_content/InstaFood.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\InstaFood.Shared.csproj",
       "Version": 2,
       "Source": "InstaFood.Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "InstaFood.Shared\\wwwroot",
       "Source": "InstaFood.Shared",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
       "SourceId": "InstaFood.Shared",
       "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
+      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
       "SourceId": "InstaFood.Shared",
       "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\AspDotCore_Practice\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
       "BasePath": "_content/InstaFood.Shared",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",

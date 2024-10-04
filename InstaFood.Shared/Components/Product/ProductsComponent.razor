@@ -1,0 +1,63 @@
+﻿@inject IProductService _productService
+<div class="mx-2">
+    @if (response == null)
+    {
+        <p>Food Not Found</p>
+    }
+    else
+    {
+        @foreach(var product in response.Data)
+        {
+            <div class="bg-white border-rounded mb-3 shadow">
+                <img class="w-100 border-rounded mb-2" style="" src=@product.ProductPicture />
+                <div class="mx-3 pb-2 d-flex justify-content-between">
+                    <span class="fs-3 fw-bold text-dark">@product.ProductName</span>
+                    <span class="text-color fs-5">
+                        <span>&#8377;</span>
+                        @((product.UnitPrice).ToString("F2"))
+                    </span>
+                </div>
+            </div>
+        }
+        <nav class="mb-5 pb-4" aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item @((response.PreviousPage == null) ? "disabled" : "")" @onclick="() => PageChange(response.PreviousPage)">
+                    <span class="page-link">Previous</span>
+                </li>
+                @for (int pageNumber = 1; pageNumber <= response.TotalPages; pageNumber++)
+                {
+                    <li class="page-item @(pageNumber == response.PageNumber ? "active" : "")">
+                        <span class="page-link">@pageNumber</span>
+                    </li>
+                }
+                <li class="page-item @((response.NextPage == null) ? "disabled" : "")" @onclick="() => PageChange(response.NextPage)">
+                    <span class="page-link">Next</span>
+                </li>
+            </ul>
+        </nav>
+    }
+</div>
+
+@code {
+    PagedResponse<IEnumerable<Product>>? response { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(200);
+        var apiResponse = await _productService.getProducts(10, 1);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        response = apiResponse;
+    }
+    private async Task PageChange(string? uri)
+    {
+        var apiResponse = await _productService.getProductsByPage(uri);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        response = apiResponse;
+        await InvokeAsync(StateHasChanged);
+    }
+}

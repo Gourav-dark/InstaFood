@@ -12,6 +12,7 @@ namespace InstaFood.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CartItemsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -22,8 +23,7 @@ namespace InstaFood.Server.Controllers
             _uriService = uriService;
         }
         [HttpGet]
-        //[Authorize(Roles ="Customer")]
-        public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string customerId = null)
+        public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string id = null)
         {
             var route = Request.Path.Value;
             var validFilter = new PaginationFilter(pageFilter.PageNumber, pageFilter.PageSize);
@@ -31,9 +31,9 @@ namespace InstaFood.Server.Controllers
             var allItems = await _unitOfWork.cartItem.GetAllAsync();
             IEnumerable<CartItem> filteredItems;
 
-            if (!string.IsNullOrEmpty(customerId))
+            if (!string.IsNullOrEmpty(id))
             {
-                filteredItems = allItems.Where(x => x.CustomerId == customerId);
+                filteredItems = allItems.Where(x => x.CustomerId == id);
             }
             else
             {
@@ -52,7 +52,7 @@ namespace InstaFood.Server.Controllers
                 }
             }
             var totalRecords = filteredItems.Count();
-            var pagedResponse = PaginationHelper.CreatePagedResponse<CartItem>(pagedData, validFilter, totalRecords, _uriService, route);
+            var pagedResponse = PaginationHelper.CreatePagedResponse<CartItem>(pagedData, validFilter, totalRecords, _uriService, route,null,id);
 
             return Ok(pagedResponse);
         }
@@ -123,10 +123,10 @@ namespace InstaFood.Server.Controllers
                 Message = "Item not found."
             });
         }
-        [HttpDelete("{customerId}")]
-        public async Task<IActionResult> DeleteAll(string customerId)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAll(string id)
         {
-            IEnumerable<CartItem> existItems = await _unitOfWork.cartItem.GetAllAsync(x => x.CustomerId == customerId);
+            IEnumerable<CartItem> existItems = await _unitOfWork.cartItem.GetAllAsync(x => x.CustomerId == id);
             if (existItems.Count()>0)
             {
                 await _unitOfWork.cartItem.RemoveRangeAsync(existItems);

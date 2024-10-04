@@ -1,21 +1,50 @@
 ﻿using InstaFood.Server.Filter;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.WebUtilities;
 
 namespace InstaFood.Server.Services
 {
     public class UriService : IUriService
     {
-        private readonly string _baseUri;
-        public UriService(string baseUri)
+        public string GetPageUri(PaginationFilter pageFilter, string route, string? filter, string? id)
         {
-            _baseUri = baseUri;
+            string uri = route + "?pageNumber=" + pageFilter.PageNumber.ToString() + "&pageSize=" + pageFilter.PageSize.ToString();
+
+            if (!string.IsNullOrEmpty(filter) && !string.IsNullOrEmpty(id))
+            {
+                return uri + "&filter=" + filter + "&id=" + id;
+            }
+            else if (!string.IsNullOrEmpty(filter))
+            {
+                return uri + "&filter=" + filter;
+            }
+            else if (!string.IsNullOrEmpty(id))
+            {
+                return uri + "&id=" + id;
+            }
+
+            return uri;
         }
-        public Uri GetPageUri(PaginationFilter filter, string route)
+
+        public string GetPageUri(int pageSize, string route, string? filter = null, string? id = null)
         {
-            var _enpointUri = new Uri(string.Concat(_baseUri, route));
-            var modifiedUri = QueryHelpers.AddQueryString(_enpointUri.ToString(), "pageNumber", filter.PageNumber.ToString());
-            modifiedUri = QueryHelpers.AddQueryString(modifiedUri, "pageSize", filter.PageSize.ToString());
-            return new Uri(modifiedUri);
+            string uri = route + "?pageSize=" + pageSize.ToString();
+
+            if (!string.IsNullOrEmpty(filter) && !string.IsNullOrEmpty(id))
+            {
+                return uri + "&filter=" + filter + "&id=" + id;
+            }
+            else if (!string.IsNullOrEmpty(filter))
+            {
+                return uri + "&filter=" + filter;
+            }
+            else if (!string.IsNullOrEmpty(id))
+            {
+                return uri + "&id=" + id;
+            }
+
+            return uri;
         }
     }
 }

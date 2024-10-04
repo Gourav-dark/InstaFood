@@ -11,6 +11,7 @@ namespace InstaFood.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class OrdersController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -21,8 +22,7 @@ namespace InstaFood.Server.Controllers
             _uriService = uriService;
         }
         [HttpGet]
-        [Authorize]
-        public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string? filter = null, [FromQuery] string? customerId = null)
+        public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string? filter = null, [FromQuery] string? id = null)
         {
             var route = Request.Path.Value;
             var validFilter = new PaginationFilter(pageFilter.PageNumber, pageFilter.PageSize);
@@ -40,9 +40,9 @@ namespace InstaFood.Server.Controllers
                 filteredItems = allItems;
             }
 
-            if (!string.IsNullOrEmpty(customerId))
+            if (!string.IsNullOrEmpty(id))
             {
-                filteredItems = filteredItems.Where(x => x.CustomerId == customerId);
+                filteredItems = filteredItems.Where(x => x.CustomerId == id);
             }
 
             var pagedData = filteredItems
@@ -60,7 +60,7 @@ namespace InstaFood.Server.Controllers
             }
 
             var totalRecords = filteredItems.Count();
-            var pagedResponse = PaginationHelper.CreatePagedResponse<Order>(pagedData, validFilter, totalRecords, _uriService, route);
+            var pagedResponse = PaginationHelper.CreatePagedResponse<Order>(pagedData, validFilter, totalRecords, _uriService, route,filter,id);
 
             return Ok(pagedResponse);
         }
@@ -130,6 +130,7 @@ namespace InstaFood.Server.Controllers
             }
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> StatusUpdate(string id,[FromQuery]string type)
         {
             try

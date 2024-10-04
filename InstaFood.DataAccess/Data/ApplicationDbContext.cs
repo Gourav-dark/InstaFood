@@ -31,7 +31,7 @@ namespace InstaFood.DataAccess.Data
             modelBuilder.Entity<CartItem>().HasKey(x => new { x.CustomerId, x.ProductId });
             modelBuilder.Entity<OrderDetail>().HasKey(x => new { x.OrderId, x.ProductId });
             modelBuilder.Entity<User>().Property(x => x.Email).IsUnicode(true);
-            modelBuilder.Entity<User>().Property(x => x.Role).HasDefaultValue("Customer");
+            modelBuilder.Entity<User>().Property(x => x.Role).HasDefaultValue("Customer").IsRequired();
 
 
             modelBuilder.Entity<OrderStatus>().HasData(
@@ -44,11 +44,11 @@ namespace InstaFood.DataAccess.Data
                 );
             modelBuilder.Entity<Order>().Property(x => x.OrderStatusId).HasDefaultValue(1).IsRequired();
             modelBuilder.Entity<Product>() .Property(x=>x.IsAvailable).HasDefaultValue(true).IsRequired();
+            modelBuilder.Entity<Product>().Property(x=>x.NonVeg).HasDefaultValue(false).IsRequired();
         }
         public class CustomIdValueGenerator : ValueGenerator<string>
         {
             public override bool GeneratesTemporaryValues => false;
-
             public override string Next(EntityEntry entry)
             {
                 return Guid.NewGuid().ToString().Substring(0, 8);

@@ -22,7 +22,7 @@ namespace InstaFood.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.CartItem", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.CartItem", b =>
                 {
                     b.Property<string>("CustomerId")
                         .HasColumnType("nvarchar(10)");
@@ -40,7 +40,7 @@ namespace InstaFood.DataAccess.Migrations
                     b.ToTable("CartItems");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.DeliveryAddress", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.DeliveryAddress", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -82,7 +82,7 @@ namespace InstaFood.DataAccess.Migrations
                     b.ToTable("DeliveryAddresses");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.Order", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.Order", b =>
                 {
                     b.Property<string>("OrderId")
                         .HasMaxLength(10)
@@ -115,7 +115,7 @@ namespace InstaFood.DataAccess.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.OrderDetail", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.OrderDetail", b =>
                 {
                     b.Property<string>("OrderId")
                         .HasColumnType("nvarchar(10)");
@@ -133,7 +133,7 @@ namespace InstaFood.DataAccess.Migrations
                     b.ToTable("OrderDetails");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.OrderStatus", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.OrderStatus", b =>
                 {
                     b.Property<int>("OrderStatusId")
                         .ValueGeneratedOnAdd()
@@ -182,7 +182,7 @@ namespace InstaFood.DataAccess.Migrations
                         });
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.Product", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.Product", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -194,6 +194,11 @@ namespace InstaFood.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(true);
+
+                    b.Property<bool>("NonVeg")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("ProductDescription")
                         .HasColumnType("nvarchar(max)");
@@ -214,7 +219,7 @@ namespace InstaFood.DataAccess.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.User", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.User", b =>
                 {
                     b.Property<string>("UserId")
                         .HasMaxLength(10)
@@ -247,15 +252,15 @@ namespace InstaFood.DataAccess.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.CartItem", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.CartItem", b =>
                 {
-                    b.HasOne("InstafoodApp.DataAccess.Models.User", "Customer")
+                    b.HasOne("InstaFood.DataAccess.Models.User", "Customer")
                         .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InstafoodApp.DataAccess.Models.Product", "Product")
+                    b.HasOne("InstaFood.DataAccess.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -266,9 +271,9 @@ namespace InstaFood.DataAccess.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.DeliveryAddress", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.DeliveryAddress", b =>
                 {
-                    b.HasOne("InstafoodApp.DataAccess.Models.User", "Customer")
+                    b.HasOne("InstaFood.DataAccess.Models.User", "Customer")
                         .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -277,15 +282,15 @@ namespace InstaFood.DataAccess.Migrations
                     b.Navigation("Customer");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.Order", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.Order", b =>
                 {
-                    b.HasOne("InstafoodApp.DataAccess.Models.User", "Customer")
+                    b.HasOne("InstaFood.DataAccess.Models.User", "Customer")
                         .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InstafoodApp.DataAccess.Models.OrderStatus", "OrderStatus")
+                    b.HasOne("InstaFood.DataAccess.Models.OrderStatus", "OrderStatus")
                         .WithMany()
                         .HasForeignKey("OrderStatusId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -296,15 +301,15 @@ namespace InstaFood.DataAccess.Migrations
                     b.Navigation("OrderStatus");
                 });
 
-            modelBuilder.Entity("InstafoodApp.DataAccess.Models.OrderDetail", b =>
+            modelBuilder.Entity("InstaFood.DataAccess.Models.OrderDetail", b =>
                 {
-                    b.HasOne("InstafoodApp.DataAccess.Models.Order", "Order")
+                    b.HasOne("InstaFood.DataAccess.Models.Order", "Order")
                         .WithMany()
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("InstafoodApp.DataAccess.Models.Product", "Product")
+                    b.HasOne("InstaFood.DataAccess.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)

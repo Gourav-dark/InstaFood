@@ -4,11 +4,13 @@ using InstaFood.Shared.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using InstaFood.Shared.Wrappers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InstaFood.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DeliveryAddressesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

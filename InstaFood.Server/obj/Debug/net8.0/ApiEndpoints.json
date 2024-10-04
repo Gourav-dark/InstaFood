@@ -18,7 +18,7 @@
         "IsRequired": false
       },
       {
-        "Name": "customerId",
+        "Name": "id",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -81,13 +81,13 @@
   {
     "ContainingType": "InstaFood.Server.Controllers.CartItemsController",
     "Method": "DeleteAll",
-    "RelativePath": "api/CartItems/{customerId}",
+    "RelativePath": "api/CartItems/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "customerId",
+        "Name": "id",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -182,7 +182,7 @@
         "IsRequired": false
       },
       {
-        "Name": "customerId",
+        "Name": "id",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -381,6 +381,27 @@
   },
   {
     "ContainingType": "InstaFood.Server.Controllers.UsersController",
+    "Method": "Get",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InstaFood.Server.Controllers.UsersController",
     "Method": "SignUp",
     "RelativePath": "api/Users",
     "HttpMethod": "POST",
@@ -388,7 +409,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
+        "Name": "obj",
         "Type": "InstaFood.Shared.DTO.UserDTO",
         "IsRequired": true
       }
@@ -420,7 +441,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "l",
+        "Name": "obj",
         "Type": "InstaFood.Shared.DTO.LoginDTO",
         "IsRequired": true
       }

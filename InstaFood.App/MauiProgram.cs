@@ -22,6 +22,7 @@ namespace InstaFood.App
             builder.Services.AddAuthorizationCore();
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IProductService, ProductService>();
             //Ending new services
             builder.Services.AddMauiBlazorWebView();
 

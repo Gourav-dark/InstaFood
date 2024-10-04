@@ -12,14 +12,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Adding new for uri Services
-builder.Services.AddHttpContextAccessor();
-builder.Services.AddSingleton<IUriService>(o =>
-{
-    var accessor = o.GetRequiredService<IHttpContextAccessor>();
-    var request = accessor.HttpContext.Request;
-    var uri = string.Concat(request.Scheme, "://", request.Host.ToUriComponent());
-    return new UriService(uri);
-});
+builder.Services.AddScoped<IUriService, UriService>();
 
 // Add DbContext with connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

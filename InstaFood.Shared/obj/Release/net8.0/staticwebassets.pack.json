@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
       "PackagePath": "staticwebassets\\background.png"
     },
     {
-      "Id": "D:\\CV_Projects\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
       "PackagePath": "staticwebassets\\exampleJsInterop.js"
     },
     {

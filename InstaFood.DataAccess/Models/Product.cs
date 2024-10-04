@@ -19,6 +19,7 @@ namespace InstaFood.DataAccess.Models
         public float UnitPrice { get; set; }
         public string? ProductPicture { get; set; }
 
-        public bool IsAvailable { get; set; }=true;
+        public bool IsAvailable { get; set; } = true;
+        public bool NonVeg { get; set; }
     }
 }
