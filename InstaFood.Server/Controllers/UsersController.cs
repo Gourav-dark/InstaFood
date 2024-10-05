@@ -131,7 +131,7 @@ namespace InstaFood.Server.Controllers
                 issuer: _config["JWT:Issuer"],
                 audience: _config["JWT:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
+                expires: DateTime.Now.AddMinutes(10080),
                 signingCredentials: credential
                 );
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);

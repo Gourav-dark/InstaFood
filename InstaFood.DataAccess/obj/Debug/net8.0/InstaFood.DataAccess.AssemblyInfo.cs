@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InstaFood.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf38efb875923dc79bb15c149bae90ac8f8df08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31f6b7cb32fd88f879f76279f3d6c75a0ce96b92")]
 [assembly: System.Reflection.AssemblyProductAttribute("InstaFood.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InstaFood.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Wrappers" />
+    <Folder Include="wwwroot\assets\" />
   </ItemGroup>
 
   <ItemGroup>

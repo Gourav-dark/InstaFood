@@ -1,2 +1,11 @@
 ﻿@page "/"
-<ProductsComponent></ProductsComponent>
+<SearchComponent HandleSearch="getFilter"></SearchComponent>
+<ProductsComponent @ref="child"></ProductsComponent>
+
+@code{
+    ProductsComponent child;
+    private async Task getFilter(string filter)
+    {
+        await child.Search(filter);
+    }
+}

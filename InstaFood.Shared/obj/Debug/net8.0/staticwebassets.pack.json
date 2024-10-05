@@ -1,12 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
-      "PackagePath": "staticwebassets\\background.png"
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\assets\\non-veg-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\non-veg-icon.svg"
     },
     {
-      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
-      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\assets\\veg-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\veg-icon.svg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InstaFood.Shared.Microsoft.AspNetCore.StaticWebAssets.props",

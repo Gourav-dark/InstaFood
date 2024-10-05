@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\assets\\image.svg"
     },
     {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\assets\\non-veg-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\non-veg-icon.svg"
+    },
+    {
+      "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\assets\\veg-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\veg-icon.svg"
+    },
+    {
       "Id": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
