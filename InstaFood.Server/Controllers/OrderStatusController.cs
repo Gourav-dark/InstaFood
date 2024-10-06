@@ -9,7 +9,7 @@ namespace InstaFood.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AllowAnonymous]
+    [Authorize]
     public class OrderStatusController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

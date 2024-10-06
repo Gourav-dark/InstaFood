@@ -43,6 +43,12 @@
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\assets\image.svg">
       <PackagePath>wwwroot\assets\image.svg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\assets\non-veg-icon.svg">
+      <PackagePath>wwwroot\assets\non-veg-icon.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\assets\veg-icon.svg">
+      <PackagePath>wwwroot\assets\veg-icon.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
     </AppxPackagedFile>
@@ -70,32 +76,20 @@
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\wwwroot\assets\non-veg-icon.svg">
-      <PackagePath>wwwroot\_content\InstaFood.Shared\assets\non-veg-icon.svg</PackagePath>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\wwwroot\assets\search-icon.svg">
-      <PackagePath>wwwroot\_content\InstaFood.Shared\assets\search-icon.svg</PackagePath>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\wwwroot\assets\veg-icon.svg">
-      <PackagePath>wwwroot\_content\InstaFood.Shared\assets\veg-icon.svg</PackagePath>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
-      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
-      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
-      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
-      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
-      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
-      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
@@ -234,21 +228,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\InstaFood.App.deps.json">
       <PackagePath>InstaFood.App.deps.json</PackagePath>
@@ -624,9 +603,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.Shared.dll">
       <PackagePath>InstaFood.Shared.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\staticwebassets.development.json">
-      <PackagePath>InstaFood.Shared.staticwebassets.runtime.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\2270340\.nuget\packages\microsoft.maui.controls.compatibility\8.0.82\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

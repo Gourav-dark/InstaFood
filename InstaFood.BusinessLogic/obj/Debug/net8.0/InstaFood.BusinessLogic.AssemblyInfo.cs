@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InstaFood.BusinessLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf38efb875923dc79bb15c149bae90ac8f8df08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ff161f46f513b0a2a00991b147b1388db18c57e")]
 [assembly: System.Reflection.AssemblyProductAttribute("InstaFood.BusinessLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InstaFood.BusinessLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

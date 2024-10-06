@@ -105,7 +105,7 @@ namespace InstaFood.Server.Controllers
                     new Response<User>() 
                     { 
                         Message = "Login Successfully.",
-                        Token=jwtTokenGenerator(existUser.Name,existUser.Email,existUser.Role),
+                        Token=jwtTokenGenerator(existUser.Name,existUser.UserId,existUser.Email,existUser.Role),
                         Succeeded=true,
                     });
             }
@@ -117,12 +117,13 @@ namespace InstaFood.Server.Controllers
                 });
         }
         //JWT with Role Base Token Generate--------------------
-        private string jwtTokenGenerator(string? name,string? email,string? role)
+        private string jwtTokenGenerator(string name,string userId,string email,string role)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:Key"]));
             var credential = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var claims = new[]
             {
+                    new Claim(ClaimTypes.NameIdentifier,userId),
                     new Claim(ClaimTypes.Name, name),
                     new Claim(ClaimTypes.Email,email),
                     new Claim(ClaimTypes.Role,role),

@@ -24,7 +24,16 @@ namespace InstaFood.Shared.Services
 
         public async Task<Response<Product>> getById(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _httpClient.GetAsync($"/api/Products/{id}");
+                var result = await response.Content.ReadFromJsonAsync<Response<Product>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<PagedResponse<IEnumerable<Product>>> getProducts(int pageSize, int pageNumber, string? filter)

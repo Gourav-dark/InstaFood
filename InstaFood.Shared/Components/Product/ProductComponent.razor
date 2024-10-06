@@ -1,6 +1,94 @@
-﻿@page "/product/{id}"
-<h3>ProductComponent</h3>
-
+﻿@inject IProductService _productService
+@inject ICartService _cartService
+@inject NavigationManager _nav
+@if (product == null)
+{
+    <p>Not Found</p>
+}
+else
+{
+    <div class="">
+        <div class="py-2" @onclick="()=>ToBack()">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.1" width="45" height="45" rx="7" fill="#FF0000" />
+                <path d="M23.8179 19C22.0605 20.7574 22.0605 23.6067 23.8179 25.3641L26.091 27.6372C26.593 28.1392 26.593 28.9532 26.091 29.4552C25.589 29.9572 24.7751 29.9572 24.2731 29.4551L21.091 26.2731C18.8316 24.0137 18.8316 20.3504 21.091 18.091L24.2731 14.909C24.7751 14.407 25.589 14.407 26.091 14.909C26.593 15.411 26.593 16.2249 26.091 16.7269L23.8179 19Z" fill="#FF0000" />
+            </svg>
+        </div>
+        <div class="mb-1">
+            <span class="position-relative">
+                <img class="w-100 border-rounded" src=@product.ProductPicture alt="Food Image" />
+                @if (product.NonVeg)
+                {
+                    <img height=30 width=30 class="position-absolute mt-2 me-2 end-0 z-2" src="assets/non-veg-icon.svg" />
+                }
+                else
+                {
+                    <img height=30 width=30 class="position-absolute mt-2 me-2 end-0 z-2" src="assets/veg-icon.svg" />
+                }
+            </span>
+        </div>
+        <div class="d-flex flex-column p-1">
+            <span class="fs-1 text-dark">@product.ProductName</span>
+            <div class="mx-2 d-flex justify-content-between align-items-center">
+                <span class="text-color fw-semibold">
+                    <span class="fs-5">&#8377;</span>
+                    <span class="fs-2">
+                        @((product.UnitPrice).ToString("F2"))
+                    </span>
+                </span>
+                @if (product.NonVeg)
+                {
+                    <span class="text-uppercase text-danger fw-bold fs-4">
+                        non-veg
+                    </span> 
+                    }
+                else
+                {
+                    <span class="text-uppercase text-success fw-bold fs-4">
+                        veg
+                    </span>
+                }
+            </div>
+            <span class="text-secondary text-dis mt-3">@product.ProductDescription</span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <span class="position-absolute bottom-0 mb-5 pb-4">
+                <button class="btn btn-primary rounded-pill py-1 pe-4 mb-3 text-uppercase d-flex align-items-center gap-3">
+                    <span class="bg-white rounded-circle" style="padding:.5rem .6rem .6rem .6rem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-plus text-color" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5" />
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                        </svg>
+                    </span>
+                    <span class="fs-5 px-1">
+                        Add to Cart
+                    </span>
+                </button>
+            </span>
+        </div>
+    </div>
+}
 @code {
+    [Parameter]
+    public int Id { get; set; }
+    private Product? product { get; set; }
+    private CartItemDTO? cart { get; set; }
 
+    protected override async Task OnInitializedAsync()
+    {
+        var apiResponse = await _productService.getById(Id);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        product = apiResponse.Data;
+    }
+    private async Task AddToCart()
+    {
+        
+    }
+    private void ToBack()
+    {
+        _nav.NavigateTo("/");
+    }
 }

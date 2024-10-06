@@ -48,7 +48,6 @@ C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Shared\obj\Debug\net8.0\I
 C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Shared\obj\Debug\net8.0\refint\InstaFood.Shared.dll
 C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFood.Shared.pdb
 C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Shared\obj\Debug\net8.0\ref\InstaFood.Shared.dll
-C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.Shared.staticwebassets.runtime.json
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.Shared.deps.json
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.Shared.dll
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.Shared.pdb
@@ -73,3 +72,4 @@ C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFood.
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\refint\InstaFood.Shared.dll
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\InstaFood.Shared.pdb
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\obj\Debug\net8.0\ref\InstaFood.Shared.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Shared\bin\Debug\net8.0\InstaFood.Shared.staticwebassets.runtime.json

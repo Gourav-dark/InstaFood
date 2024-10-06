@@ -1,4 +1,5 @@
-﻿:root {
+﻿@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+:root {
     --primary-color: #FF0000;
     --secondary-color: #FA4A0C;
     --primary-white: #FFFFFF;
@@ -8,6 +9,7 @@
 
 .body {
     background-color: var(--secondary-white);
+    font-family: 'Sofia Pro', sans-serif;
 }
 /*Custom css is above*/
 .valid.modified:not([type=checkbox]) {
@@ -79,6 +81,12 @@
 }
 .text-dark {
     color: var(--primary-dark);
+}
+.text-secondary {
+    color: #858992;
+}
+.text-dis{
+    font-size:.95rem;
 }
 .text-color{
     color:var(--secondary-color);

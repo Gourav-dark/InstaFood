@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yyY0aWc11FGcvpCL3EkUq63hwH76V8F4pXoIodJ3NDs=",
+  "Hash": "egVRk8s1EW54qeEAQLQizV5uV57XKH1/WRPyEeMDVsM=",
   "Source": "InstaFood.Server",
   "BasePath": "_content/InstaFood.Server",
   "Mode": "Default",
@@ -18,53 +18,6 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
-  "DiscoveryPatterns": [
-    {
-      "Name": "InstaFood.Shared\\wwwroot",
-      "Source": "InstaFood.Shared",
-      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
-      "BasePath": "_content/InstaFood.Shared",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\background.png",
-      "SourceId": "InstaFood.Shared",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
-      "BasePath": "_content/InstaFood.Shared",
-      "RelativePath": "background.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\background.png"
-    },
-    {
-      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\exampleJsInterop.js",
-      "SourceId": "InstaFood.Shared",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
-      "BasePath": "_content/InstaFood.Shared",
-      "RelativePath": "exampleJsInterop.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
-    }
-  ]
+  "DiscoveryPatterns": [],
+  "Assets": []
 }

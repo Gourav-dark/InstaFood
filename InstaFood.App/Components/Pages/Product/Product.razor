@@ -1,0 +1,6 @@
+﻿@page "/product/{id:int}"
+<ProductComponent Id="id"></ProductComponent>
+@code {
+    [Parameter]
+    public int id { get; set; }
+}

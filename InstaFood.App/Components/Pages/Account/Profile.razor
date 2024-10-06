@@ -1,0 +1,13 @@
+﻿@page "/profile"
+@inject AppManager _appManager
+@inject NavigationManager _nav
+
+<h3>Profile</h3>
+<button class="btn btn-primary px-2" @onclick="()=>Logout()">Logout</button>
+@code {
+    private async Task Logout()
+    {
+        await _appManager.LogoutAppManager();
+        _nav.NavigateTo("/login");
+    } 
+}

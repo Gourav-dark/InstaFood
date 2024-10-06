@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gWmRANnCJhrfDD2PW/itipfqLftyiVTAjw/qY0FEJt0=",
+  "Hash": "ZoEahyTMXi7YlvVpeXTP0pUeWNcq2u69tcRBA6tVo1w=",
   "Source": "InstaFood.App",
   "BasePath": "/",
   "Mode": "Root",
@@ -24,13 +24,6 @@
       "Source": "InstaFood.App",
       "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
-      "Pattern": "**"
-    },
-    {
-      "Name": "InstaFood.Shared\\wwwroot",
-      "Source": "InstaFood.Shared",
-      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
-      "BasePath": "_content/InstaFood.Shared",
       "Pattern": "**"
     }
   ],
@@ -300,44 +293,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\assets\\non-veg-icon.svg",
-      "SourceId": "InstaFood.Shared",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
-      "BasePath": "_content/InstaFood.Shared",
-      "RelativePath": "assets/non-veg-icon.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\non-veg-icon.svg"
-    },
-    {
-      "Identity": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\assets\\veg-icon.svg",
-      "SourceId": "InstaFood.Shared",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
-      "BasePath": "_content/InstaFood.Shared",
-      "RelativePath": "assets/veg-icon.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\veg-icon.svg"
     }
   ]
 }

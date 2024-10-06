@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InstaFood.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31f6b7cb32fd88f879f76279f3d6c75a0ce96b92")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ff161f46f513b0a2a00991b147b1388db18c57e")]
 [assembly: System.Reflection.AssemblyProductAttribute("InstaFood.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InstaFood.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

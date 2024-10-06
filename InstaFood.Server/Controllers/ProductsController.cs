@@ -12,6 +12,7 @@ namespace InstaFood.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -22,7 +23,6 @@ namespace InstaFood.Server.Controllers
             _uriService = uriService;
         }
         [HttpGet]
-        [AllowAnonymous]
         public async Task<IActionResult> Get([FromQuery] PaginationFilter pageFilter, [FromQuery] string filter=null)
         {
             var route = Request.Path.Value;
