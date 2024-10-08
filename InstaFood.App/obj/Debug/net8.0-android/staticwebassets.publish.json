@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pTVCfYA6TsRQyxu8Mdw4I2Lnfu/wzjBgalhgpwWDv3c=",
+  "Hash": "upPvuBfVJw1HJ6ZWRNghqBLAzEuAJVb/gXbwY9md+7k=",
   "Source": "InstaFood.App",
   "BasePath": "/",
   "Mode": "Root",
@@ -24,6 +24,13 @@
       "Source": "InstaFood.App",
       "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\wwwroot\\",
       "BasePath": "/",
+      "Pattern": "**"
+    },
+    {
+      "Name": "InstaFood.Shared\\wwwroot",
+      "Source": "InstaFood.Shared",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "BasePath": "_content/InstaFood.Shared",
       "Pattern": "**"
     }
   ],

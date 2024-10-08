@@ -1,5 +1,84 @@
-﻿<h3>ProfileComponent</h3>
-
+﻿@inject NavigationManager _nav
+@if (user == null)
+{
+    <p>Not working</p>
+}
+else
+{
+    <div>
+        <div class="pt-3 pb-1" @onclick='()=>ToNavigate("")'>
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.1" width="45" height="45" rx="7" fill="#FF0000" />
+                <path d="M23.8179 19C22.0605 20.7574 22.0605 23.6067 23.8179 25.3641L26.091 27.6372C26.593 28.1392 26.593 28.9532 26.091 29.4552C25.589 29.9572 24.7751 29.9572 24.2731 29.4551L21.091 26.2731C18.8316 24.0137 18.8316 20.3504 21.091 18.091L24.2731 14.909C24.7751 14.407 25.589 14.407 26.091 14.909C26.593 15.411 26.593 16.2249 26.091 16.7269L23.8179 19Z" fill="#FF0000" />
+            </svg>
+        </div>
+        <div class="fs-3 px-3 mb-2">
+            My Profile
+        </div>
+        <div class="bg-white p-4 mt-1 mx-2 border-rounded-1 mb-3 shadow-sm">
+            <div class="fs-3 fw-bold">@user.Name</div>
+            <div class="fs-6 fw-light text-decoration-underline">@user.Email</div>
+        </div>
+        <div class="bg-white mx-2 border-rounded-1 py-3 px-4 fs-4 d-flex justify-content-between mb-2 shadow-sm" @onclick='()=>ToNavigate("address")'>
+            <span class="">Address</span>
+            <span class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right text-color" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </span>
+        </div>
+        <div class="bg-white mx-2 border-rounded-1 py-3 px-4 fs-4 d-flex justify-content-between mb-2 shadow-sm" @onclick='()=>ToNavigate("orders")'>
+            <span class="">Orders</span>
+            <span class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right text-color" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </span>
+        </div>
+        <div class="bg-white mx-2 border-rounded-1 py-3 px-4 fs-4 d-flex justify-content-between mb-2 shadow-sm" @onclick='()=>ToNavigate("carts")'>
+            <span class="">Carts</span>
+            <span class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right text-color" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </span>
+        </div>
+        <div class="bg-white mx-2 border-rounded-1 py-3 px-4 fs-4 d-flex justify-content-between shadow-sm" @onclick='()=>ToNavigate("help")'>
+            <span class="">Help</span>
+            <span class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right text-color" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <span class="position-absolute bottom-0 mb-5 pb-4">
+                <button class="btn btn-primary rounded-pill text-capitalize px-5 py-2 mb-3 d-flex align-items-center gap-1" @onclick="()=>Logout()">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                            <path d="M7.5 1v7h1V1z" />
+                            <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
+                        </svg>
+                    </span>
+                    <span class="fs-3 px-1 fw-semibold">
+                        logout
+                    </span>
+                </button>
+            </span>
+        </div>
+    </div>
+}
 @code {
-
+    [Parameter]
+    public CurrentUser? user { get; set; }
+    [Parameter] public EventCallback HandleLogout { get; set; }
+    private void ToNavigate(string url)
+    {
+        _nav.NavigateTo($"/{url}");
+    }
+    private async Task Logout()
+    {
+        await HandleLogout.InvokeAsync();
+        _nav.NavigateTo("/login");
+    }
 }

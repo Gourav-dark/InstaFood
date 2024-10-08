@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "egVRk8s1EW54qeEAQLQizV5uV57XKH1/WRPyEeMDVsM=",
+  "Hash": "5vdS5TfM0en4Qn9MVsmNcB2Y61e1grjE3IX5Ej90AaI=",
   "Source": "InstaFood.Server",
   "BasePath": "_content/InstaFood.Server",
   "Mode": "Default",
@@ -18,6 +18,14 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "InstaFood.Shared\\wwwroot",
+      "Source": "InstaFood.Shared",
+      "ContentRoot": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\wwwroot\\",
+      "BasePath": "_content/InstaFood.Shared",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

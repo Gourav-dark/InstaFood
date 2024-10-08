@@ -309,6 +309,7 @@ C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Server\obj\Debug\net8.0\r
 C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Server\obj\Debug\net8.0\InstaFood.Server.pdb
 C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Server\obj\Debug\net8.0\InstaFood.Server.genruntimeconfig.cache
 C:\GS_Practice\AspDotCore_Practice\InstaFood\InstaFood.Server\obj\Debug\net8.0\ref\InstaFood.Server.dll
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\InstaFood.Shared.staticwebassets.runtime.json
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\appsettings.Development.json
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\appsettings.json
 C:\GS_Practice\Blazor-App\InstaFood\InstaFood.Server\bin\Debug\net8.0\InstaFood.Server.staticwebassets.runtime.json

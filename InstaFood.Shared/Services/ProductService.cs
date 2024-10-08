@@ -40,17 +40,13 @@ namespace InstaFood.Shared.Services
         {
             try
             {
-                HttpResponseMessage response;
+                string requestUri = $"/api/Products?pageSize={pageSize}&pageNumber={pageNumber}";
 
                 if (!string.IsNullOrEmpty(filter))
                 {
-                    response = await _httpClient.GetAsync($"/api/Products?filter={filter}&pageSize={pageSize}&pageNumber={pageNumber}");
+                    requestUri += $"&filter={filter}";
                 }
-                else
-                {
-                    response = await _httpClient.GetAsync($"/api/Products?pageSize={pageSize}&pageNumber={pageNumber}");
-                }
-
+                HttpResponseMessage response = await _httpClient.GetAsync(requestUri);
                 var result = await response.Content.ReadFromJsonAsync<PagedResponse<IEnumerable<Product>>>();
                 return result;
             }

@@ -68,28 +68,5 @@ namespace InstaFood.App.Authentication
             var claims = readToken.Claims;
             return new ClaimsIdentity(claims, "CustomAuth");
         }
-        public CurrentUser GetCurrentUser()
-        {
-            var authState = GetAuthenticationStateAsync().Result;
-            var user = authState.User;
-
-            if (user.Identity.IsAuthenticated)
-            {
-                var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                var name = user.FindFirst(ClaimTypes.Name)?.Value;
-                var email = user.FindFirst(ClaimTypes.Email)?.Value;
-                var role =user.FindFirst(ClaimTypes.Role)?.Value;
-
-                return new CurrentUser
-                {
-                    IsAuthenticated = true,
-                    UserId = userId,
-                    Name = name,
-                    Email = email,
-                    Role = role
-                };
-            }
-            return new CurrentUser { IsAuthenticated = false };
-        }
     }
 }

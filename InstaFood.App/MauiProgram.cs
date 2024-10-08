@@ -20,14 +20,13 @@ namespace InstaFood.App
             builder.Services.AddHttpClient();
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://www.instafood.somee.com/") });
             builder.Services.AddAuthorizationCore();
-            builder.Services.AddScoped<CustomAuthenticationStateProvider>();
-            builder.Services.AddScoped<AuthenticationStateProvider>(provider => provider.GetRequiredService<CustomAuthenticationStateProvider>());
+            builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             builder.Services.AddScoped<AppManager>();
-            //builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
-            //builder.Services.AddScoped<AppManager>();
+
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
             //Ending new services
             builder.Services.AddMauiBlazorWebView();
 

@@ -34,14 +34,23 @@ namespace InstaFood.Shared.Services
 
         public async Task<Response<CartItem>> deleteCartItem(string CustomerId, int productId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _httpClient.DeleteAsync($"/api/cartitems?customerId={CustomerId}&productId={productId}");
+                var result = await response.Content.ReadFromJsonAsync<Response<CartItem>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public async Task<PagedResponse<IEnumerable<CartItem>>> getCartItem(int pageSize, int pageNumber, string customerId)
         {
             try
             {
-                var response = await _httpClient.GetAsync($"/api/cartitems?pageSize={pageSize}&pageNumber={pageNumber}&id={customerId}");
+                var response = await _httpClient.GetAsync($"/api/cartitems?pageNumber={pageNumber}&pageSize={pageSize}&id={customerId}");
                 var result = await response.Content.ReadFromJsonAsync<PagedResponse<IEnumerable<CartItem>>>();
                 return result;
             }

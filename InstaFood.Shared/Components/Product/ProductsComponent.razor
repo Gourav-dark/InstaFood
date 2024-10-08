@@ -9,7 +9,7 @@
     {
         @foreach(Product product in response.Data)
         {
-            <div class="bg-white border-rounded mb-2 shadow-lg" @onclick="()=>ToProduct(product.ProductId)">
+            <div class="bg-white border-rounded mb-2 shadow-sm" @onclick="()=>ToProduct(product.ProductId)">
                 <span class="position-relative">
                     <img class="w-100 border-rounded mb-2" src=@product.ProductPicture />
                     @if (product.NonVeg)
@@ -24,7 +24,7 @@
                 <div class="mx-3 pb-2 d-flex justify-content-between">
                     <span class="fs-3 fw-bold text-dark">@product.ProductName</span>
                     <span class="text-color fs-5">
-                        <span>&#8377;</span>
+                        <span>&#8377;.</span>
                         @((product.UnitPrice).ToString("F2"))
                     </span>
                 </div>

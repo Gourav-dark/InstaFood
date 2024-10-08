@@ -1,6 +1,14 @@
 ﻿@page "/carts"
-<h3>Cart</h3>
+@inject AppManager _appManager
 
+<CartsComponent userId="@userId"></CartsComponent>
 @code {
+    private CurrentUser? user { get; set; }
+    private string? userId { get; set; }
 
+    protected override async Task OnInitializedAsync()
+    {
+        user = await _appManager.GetCurrentUser();
+        userId = user.UserId;
+    }
 }

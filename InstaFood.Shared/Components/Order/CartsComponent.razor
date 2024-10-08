@@ -1,0 +1,160 @@
+﻿@inject ICartService _cartService
+@inject NavigationManager _nav
+<div>
+    <div class="pt-3 pb-1" @onclick="()=>ToBack()">
+        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="45" height="45" rx="7" fill="#FF0000" />
+            <path d="M23.8179 19C22.0605 20.7574 22.0605 23.6067 23.8179 25.3641L26.091 27.6372C26.593 28.1392 26.593 28.9532 26.091 29.4552C25.589 29.9572 24.7751 29.9572 24.2731 29.4551L21.091 26.2731C18.8316 24.0137 18.8316 20.3504 21.091 18.091L24.2731 14.909C24.7751 14.407 25.589 14.407 26.091 14.909C26.593 15.411 26.593 16.2249 26.091 16.7269L23.8179 19Z" fill="#FF0000" />
+        </svg>
+    </div>
+    <div class="mx-2 text-dark fw-semibold fs-1">Order details</div>
+    @if (cartItems == null)
+    {
+        <p>Not Found over</p>
+    }
+    else
+    {
+        @foreach(var item in cartItems)
+        {
+            <div class="shadow-sm border-rounded-2 mx-1 px-1 bg-white position-relative" style="margin-bottom:.7rem;">
+                <div class="row">
+                    <span class="col-3 p-0 ps-2">
+                        <img class="border-rounded-2" height="90" width="90" src="@item.Product.ProductPicture" alt="@item.Product.ProductName" />
+                    </span>
+                    <span class="col-5 p-0 pt-1 d-flex flex-column">
+                        <span class="fs-6 mb-1">@item.Product.ProductName</span>
+                        <span class="text-color fw-semibold">
+                            <span class="fs-6">&#8377;.</span>
+                            <span class="fs-4">
+                                @((item.Product.UnitPrice).ToString("F2"))
+                            </span>
+                        </span>
+                    </span>
+                    <span class="col-4 px-3 d-flex align-items-center justify-content-between">
+                        <span @onclick="() => DecreaseQuantity(item)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash-circle text-color" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                            </svg>
+                            
+                        </span>
+                        <span class="text-dark fs-2">
+                            @item.Quantity
+                        </span>
+                        <span @onclick="() => IncreaseQuantity(item)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill text-color" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="position-absolute z-2" style="top:-.5rem;right:-.5rem;" @onclick="() => DeleteCartItem(item)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill" style="color:#FF474D;" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                    </svg>
+                </div>
+            </div>
+        }
+        <div class="bg-color-secondary border-rounded-2 p-2 mx-1">
+            <div class="d-flex justify-content-between px-3 py-2 text-white">
+                <span class="fs-5 fw-semibold">
+                    Totol Cost
+                </span>
+                <span class="fs-5">
+                    <span class="fs-5">&#8377;.</span>
+                    <span>
+                        @TotalCost.ToString("F2")
+                    </span>
+                </span>
+            </div>
+            <div class="px-2">
+                <button class="btn btn-secondary w-100 text-capitalize text-color border-rounded-2">
+                    <span class="fs-4">
+                        Place My order
+                    </span>
+                </button>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string? userId { get; set; }
+    private List<CartItem>? cartItems { get; set; }
+    private float TotalCost { get; set; } = 0;
+    protected override async Task OnInitializedAsync()
+    {
+        var apiResponse = await _cartService.getCartItem(10, 1,userId);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        cartItems = apiResponse.Data.ToList();
+        UpdateTotalCost();
+    }
+    private async Task IncreaseQuantity(CartItem item)
+    {
+        item.Quantity++;
+        CartItemDTO? updateItem = new()
+            {
+                ProductId = item.ProductId,
+                CustomerId = item.CustomerId,
+                Quantity = item.Quantity
+            };
+        var apiResponse = await _cartService.updateCartItem(updateItem);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        UpdateTotalCost();
+    }
+
+    private async Task DecreaseQuantity(CartItem item)
+    {
+        if (item.Quantity > 1)
+        {
+            item.Quantity--;
+            CartItemDTO? updateItem = new()
+                {
+                    ProductId = item.ProductId,
+                    CustomerId = item.CustomerId,
+                    Quantity = item.Quantity
+                };
+            var apiResponse = await _cartService.updateCartItem(updateItem);
+            if (!apiResponse.Succeeded)
+            {
+                return;
+            }
+            UpdateTotalCost();
+        }
+    }
+
+    private async Task DeleteCartItem(CartItem item)
+    {
+        await _cartService.deleteCartItem(item.CustomerId, item.ProductId);
+        UpdateTotalCost();
+        await Refresh();
+        cartItems.Remove(item);
+    }
+
+    private void ToBack()
+    {
+        _nav.NavigateTo("/");
+    }
+    private void UpdateTotalCost()
+    {
+        TotalCost = 0;
+        if (cartItems.Count() > 0)
+        {
+            foreach (var item in cartItems)
+            {
+                TotalCost += item.Quantity * item.Product.UnitPrice;
+            }
+        }
+    }
+    private async Task Refresh()
+    {
+        await InvokeAsync(StateHasChanged);
+    }
+}

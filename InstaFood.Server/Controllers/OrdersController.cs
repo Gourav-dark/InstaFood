@@ -157,5 +157,32 @@ namespace InstaFood.Server.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpDelete("cancel")]
+        public async Task<IActionResult> Cancel(string id)
+        {
+            try
+            {
+                var existOrder = await _unitOfWork.order.GetAsync(x => x.OrderId == id);
+                if (existOrder != null)
+                {
+                    await _unitOfWork.order.UpdateStatus(id, "Cancelled");
+                    await _unitOfWork.Save();
+                    return Ok(new Response<Order>(existOrder)
+                    {
+                        Message = "Order Cancelled."
+                    });
+                }
+                return NotFound(
+                    new Response<Order>()
+                    {
+                        Succeeded = false,
+                        Message = "Id not Found."
+                    });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
