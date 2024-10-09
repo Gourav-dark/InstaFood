@@ -1,5 +1,15 @@
 ﻿@inherits LayoutComponentBase
 <div class="body container-fluid min-vh-100">
-    <NavMenu/>
+    <NavMenu />
     @Body
 </div>
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+        {
+            await Application.Current.MainPage.DisplayAlert("Connectivity Error", "No internet access", "Ok");
+            Application.Current.Quit();
+        }
+    }
+}

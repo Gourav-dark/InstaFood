@@ -1,4 +1,5 @@
 ﻿@page "/carts"
+@attribute [Authorize]
 @inject AppManager _appManager
 
 <CartsComponent userId="@userId"></CartsComponent>
@@ -8,6 +9,11 @@
 
     protected override async Task OnInitializedAsync()
     {
+        if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+        {
+            await Application.Current.MainPage.DisplayAlert("Connectivity Error", "No internet access", "Ok");
+            Application.Current.Quit();
+        }
         user = await _appManager.GetCurrentUser();
         userId = user.UserId;
     }
