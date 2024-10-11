@@ -83,6 +83,7 @@ namespace InstaFood.Server.Controllers
                 });
         }
         [HttpGet("placeOrder/{customerId}")]
+        [Authorize(Roles ="Customer")]
         public async Task<IActionResult> PlaceOrder(string customerId)
         {
             try
@@ -158,6 +159,7 @@ namespace InstaFood.Server.Controllers
             }
         }
         [HttpDelete("cancel")]
+        [Authorize(Roles = "Customer")]
         public async Task<IActionResult> Cancel(string id)
         {
             try

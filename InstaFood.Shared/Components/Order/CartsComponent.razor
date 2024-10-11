@@ -1,4 +1,5 @@
 ﻿@inject ICartService _cartService
+@inject IOrderService _orderService
 @inject NavigationManager _nav
 <div>
     <div class="p-1 pt-3" @onclick="()=>ToBack()">
@@ -21,8 +22,8 @@
                     <span class="col-3 p-0 ps-2">
                         <img class="border-rounded-2" height="90" width="90" src="@item.Product.ProductPicture" alt="@item.Product.ProductName" />
                     </span>
-                    <span class="col-5 p-0 pt-1 d-flex flex-column">
-                        <span class="fs-6 mb-1">@item.Product.ProductName</span>
+                    <span class="col-5 ps-2 pt-1 d-flex flex-column">
+                        <span class="fs-6">@item.Product.ProductName</span>
                         <span class="text-color fw-semibold">
                             <span class="fs-6">&#8377;.</span>
                             <span class="fs-4">
@@ -68,7 +69,7 @@
                 </span>
             </div>
             <div class="px-2">
-                <button class="btn btn-secondary w-100 text-capitalize text-color border-rounded-2">
+                <button class="btn btn-secondary w-100 text-capitalize text-color border-rounded-2" @onclick="()=>placeOrder()">
                     <span class="fs-4">
                         Place My order
                     </span>
@@ -83,8 +84,13 @@
     public string? userId { get; set; }
     private List<CartItem>? cartItems { get; set; }
     private float TotalCost { get; set; } = 0;
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
+        if (userId == null)
+        {
+            cartItems = null;
+            return;
+        }
         var apiResponse = await _cartService.getCartItem(10, 1,userId);
         if (!apiResponse.Succeeded)
         {
@@ -135,7 +141,7 @@
         await _cartService.deleteCartItem(item.CustomerId, item.ProductId);
         UpdateTotalCost();
         await Refresh();
-        cartItems.Remove(item);
+        cartItems?.Remove(item);
     }
 
     private void ToBack()
@@ -152,6 +158,15 @@
                 TotalCost += item.Quantity * item.Product.UnitPrice;
             }
         }
+    }
+    private async Task placeOrder()
+    {
+        var apiResponse = await _orderService.PlaceOrder(userId);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        _nav.NavigateTo("/orders");
     }
     private async Task Refresh()
     {

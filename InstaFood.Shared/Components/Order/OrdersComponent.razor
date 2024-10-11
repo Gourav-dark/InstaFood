@@ -1,5 +1,101 @@
-﻿<h3>OrdersComponent</h3>
-
+﻿@inject IOrderService _orderService
+<div class="">
+    <div class="fs-3 fw-bold mb-2">My Orders</div>
+    @if (response?.Data == null)
+    {
+        <p>Data Not Found</p>
+    }
+    else
+    {
+        @foreach (Order item in response.Data)
+        {
+            <div class="bg-white shadow-sm border-rounded-2 p-3 mb-2">
+                <div class="px-2 d-flex justify-content-between text-secondary" style="font-size:.8rem;">
+                    <span class="">
+                        @item.OrderTime.ToString("hh:mm tt") @item.OrderDate.ToString("dd MMM yy")
+                    </span>
+                    <span class="text-decoration-underline fw-light">
+                        #@item.OrderId
+                    </span>
+                </div>
+                <div>
+                    <OrderItemComponent orderId="@item.OrderId"></OrderItemComponent>
+                </div>
+                <div class="d-flex justify-content-end align-items-center p-2" style="font-size:.8rem;">
+                    <span class="text-secondary">Total Cost</span>
+                    <span class="px-2 text-danger">:</span>
+                    <span class="text-color fs-6"><span class="px-1">&#8377;</span>@item.TotalCost.ToString("F2")</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary px-5">Track Order</button>
+                    <button class="btn btn-outline-primary px-5">Cancel</button>
+                </div>
+            </div>
+        }
+        <nav class="mb-5 pb-3" aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item @((response.PreviousPage == null) ? "disabled" : "")" @onclick="() => PageChange(response.PreviousPage)">
+                    <span class="page-link">Previous</span>
+                </li>
+                @for (int pageNumber = 1; pageNumber <= response.TotalPages; pageNumber++)
+                {
+                    var currentPage = pageNumber;
+                    <li class="page-item @(currentPage == response.PageNumber ? "active" : "")" @onclick="() => PageChange(response.getCustomPageUri(currentPage))">
+                        <span class="page-link">@currentPage</span>
+                    </li>
+                }
+                <li class="page-item @((response.NextPage == null) ? "disabled" : "")" @onclick="() => PageChange(response.NextPage)">
+                    <span class="page-link">Next</span>
+                </li>
+            </ul>
+        </nav>
+    }
+</div>
 @code {
+    [Parameter]
+    public CurrentUser? user { get; set; }
+    private PagedResponse<IEnumerable<Order>>? response { get; set; }
 
+    protected override async Task OnParametersSetAsync()
+    {
+        if (user == null)
+        {
+            response = null;
+            return;
+        }
+        PagedResponse<IEnumerable<Order>> apiResponse;
+        if (user.Role == "Admin")
+        {
+            apiResponse = await _orderService.getOrders(5, 1);
+        }
+        else
+        {
+            apiResponse = await _orderService.getOrders(5, 1, null, user.UserId);
+        }
+
+        if (!apiResponse.Succeeded)
+        {
+            response = null;
+            return;
+        }
+        response = apiResponse;
+    }
+    private async Task PageChange(string? uri)
+    {
+        if (uri == null || response == null)
+        {
+            return;
+        }
+        var apiResponse = await _orderService.getOrderByPage(uri);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        response = apiResponse;
+        await Refresh();
+    }
+    private async Task Refresh()
+    {
+        await InvokeAsync(StateHasChanged);
+    }
 }

@@ -1,6 +1,7 @@
 ﻿@inject IProductService _productService
 @inject ICartService _cartService
 @inject NavigationManager _nav
+
 @if (product == null)
 {
     <p>Not Found</p>
@@ -8,7 +9,7 @@
 else
 {
     <div class="px-1">
-        <div class="p-1 pt-3 pb-2" @onclick="()=>ToBack()">
+        <div class="p-1 pt-3" @onclick="()=>ToBack()">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect opacity="0.1" width="45" height="45" rx="7" fill="#FF0000" />
                 <path d="M23.8179 19C22.0605 20.7574 22.0605 23.6067 23.8179 25.3641L26.091 27.6372C26.593 28.1392 26.593 28.9532 26.091 29.4552C25.589 29.9572 24.7751 29.9572 24.2731 29.4551L21.091 26.2731C18.8316 24.0137 18.8316 20.3504 21.091 18.091L24.2731 14.909C24.7751 14.407 25.589 14.407 26.091 14.909C26.593 15.411 26.593 16.2249 26.091 16.7269L23.8179 19Z" fill="#FF0000" />
@@ -72,12 +73,17 @@ else
     [Parameter]
     public int Id { get; set; }
     [Parameter]
-    public string userId { get; set; }
+    public string? userId { get; set; }
     private Product? product { get; set; }
 
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
+        if (userId == null)
+        {
+            product = null;
+            return;
+        }
         var apiResponse = await _productService.getById(Id);
         if (!apiResponse.Succeeded)
         {

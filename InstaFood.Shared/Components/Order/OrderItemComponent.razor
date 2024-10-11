@@ -1,0 +1,41 @@
+﻿@inject IOrderService _orderService
+@if (orderDetail != null)
+{
+    <div class="">
+        @foreach(OrderDetail item in orderDetail)
+        {
+            <div class="p-1 row">
+                <div class="col-2 p-0 ps-2">
+                    <img class="border-rounded-2" height="60" width="60" src="@item.Product.ProductPicture" alt="@item.Product.ProductName" />
+                </div>
+                <div class="col-6 p-0 ps-3 d-flex flex-column" style="font-size:.9rem;">
+                    <div>@item.Product.ProductName</div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-color"><span class="">&#8377;.</span>@item.Product.UnitPrice.ToString("F2")</div>
+                        <span class="px-2 text-success" style="font-size:.6rem">X</span>
+                        <div class="text-color">@item.Quantity.ToString("D2")</div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+@code {
+    [Parameter]
+    public string? orderId { get; set; }
+    private IEnumerable<OrderDetail>? orderDetail { get; set; }
+    protected override async Task OnParametersSetAsync()
+    {
+        if(orderId == null)
+        {
+            orderDetail = null;
+            return;
+        }
+        var apiResponse = await _orderService.getOrderDetailByOrderId(orderId);
+        if (!apiResponse.Succeeded)
+        {
+            return;
+        }
+        orderDetail = apiResponse.Data;
+    }
+}

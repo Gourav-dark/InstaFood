@@ -14,12 +14,31 @@ namespace InstaFood.Shared.Services
         }
         public async Task<Response<Order>> Cancel(string id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _httpClient.GetAsync($"/api/Orders/cancel?Id={id}");
+                var result = await response.Content.ReadFromJsonAsync<Response<Order>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
-        public async Task<Response<Order>> getById(int id)
+        public async Task<Response<Order>> getById(string id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _httpClient.GetAsync($"/api/Orders/{id}");
+                var result = await response.Content.ReadFromJsonAsync<Response<Order>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
         }
 
         public async Task<PagedResponse<IEnumerable<Order>>> getOrderByPage(string? pageUrl)
@@ -40,7 +59,7 @@ namespace InstaFood.Shared.Services
         {
             try
             {
-                string requestUri = $"/api/Products?pageSize={PageSize}&pageNumber={PageNumber}";
+                string requestUri = $"/api/Orders?pageSize={PageSize}&pageNumber={PageNumber}";
 
                 if (!string.IsNullOrEmpty(filter))
                 {
@@ -65,12 +84,58 @@ namespace InstaFood.Shared.Services
 
         public async Task<Response<Order>> PlaceOrder(string customerId)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                var response = await _httpClient.GetAsync($"/api/Orders/placeOrder/{customerId}");
+                var result = await response.Content.ReadFromJsonAsync<Response<Order>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
 
+        }
         public async Task<Response<Order>> Update(string orderId, string status)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _httpClient.DeleteAsync($"/api/Orders/{orderId}?type={status}");
+                var result = await response.Content.ReadFromJsonAsync<Response<Order>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
+        public async Task<Response<OrderStatus>> getAllStatus()
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"/api/OrderStatus");
+                var result = await response.Content.ReadFromJsonAsync<Response<OrderStatus>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public async Task<Response<IEnumerable<OrderDetail>>> getOrderDetailByOrderId(string orderId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"/api/OrderDetails/{orderId}");
+                var result= await response.Content.ReadFromJsonAsync<Response<IEnumerable<OrderDetail>>>();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

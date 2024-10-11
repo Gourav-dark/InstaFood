@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\GS_Practice\\Blazor-App\\InstaFood\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.shared\\components\\order\\orderscomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|solutionrelative:instafood.shared\\components\\order\\orderscomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.shared\\components\\product\\productcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|solutionrelative:instafood.shared\\components\\product\\productcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,24 +15,12 @@
       "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\pages\\order\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\pages\\order\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\pages\\order\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.shared\\services\\pagehistorystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFE01225-587D-4277-AB95-D5C3C6D669EE}|InstaFood.Shared\\InstaFood.Shared.csproj|solutionrelative:instafood.shared\\services\\pagehistorystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\pages\\product\\product.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\pages\\product\\product.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\pages\\account\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\pages\\account\\profile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|c:\\gs_practice\\blazor-app\\instafood\\instafood.app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8EDC557-6C08-4438-B2D8-93D3F3EAF361}|InstaFood.App\\InstaFood.App.csproj|solutionrelative:instafood.app\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,113 +50,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrdersComponent.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Order\\OrdersComponent.razor",
-              "RelativeDocumentMoniker": "InstaFood.Shared\\Components\\Order\\OrdersComponent.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Order\\OrdersComponent.razor",
-              "RelativeToolTip": "InstaFood.Shared\\Components\\Order\\OrdersComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T02:31:42.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductComponent.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
-              "RelativeDocumentMoniker": "InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
-              "RelativeToolTip": "InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:46:13.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CartsComponent.razor",
               "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Order\\CartsComponent.razor",
               "RelativeDocumentMoniker": "InstaFood.Shared\\Components\\Order\\CartsComponent.razor",
               "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Order\\CartsComponent.razor",
               "RelativeToolTip": "InstaFood.Shared\\Components\\Order\\CartsComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAJUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:45:19.148Z"
+              "WhenOpened": "2024-10-11T05:49:19.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Orders.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Order\\Orders.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Pages\\Order\\Orders.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Order\\Orders.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Pages\\Order\\Orders.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:38:07.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:37:03.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Product\\Product.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Pages\\Product\\Product.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Product\\Product.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Pages\\Product\\Product.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:36:52.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Cart.razor",
               "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Order\\Cart.razor",
               "RelativeDocumentMoniker": "InstaFood.App\\Components\\Pages\\Order\\Cart.razor",
               "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Order\\Cart.razor",
               "RelativeToolTip": "InstaFood.App\\Components\\Pages\\Order\\Cart.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:36:40.072Z"
+              "WhenOpened": "2024-10-11T05:49:14.556Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Profile.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Account\\Profile.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Pages\\Account\\Profile.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Account\\Profile.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Pages\\Account\\Profile.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:36:26.883Z"
+              "DocumentIndex": 4,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "InstaFood.App\\MauiProgram.cs",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\MauiProgram.cs",
+              "RelativeToolTip": "InstaFood.App\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T05:43:37.262Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Account\\Login.razor",
-              "RelativeDocumentMoniker": "InstaFood.App\\Components\\Pages\\Account\\Login.razor",
-              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.App\\Components\\Pages\\Account\\Login.razor",
-              "RelativeToolTip": "InstaFood.App\\Components\\Pages\\Account\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PageHistoryState.cs",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Services\\PageHistoryState.cs",
+              "RelativeDocumentMoniker": "InstaFood.Shared\\Services\\PageHistoryState.cs",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Services\\PageHistoryState.cs",
+              "RelativeToolTip": "InstaFood.Shared\\Services\\PageHistoryState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T05:36:25.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductComponent.razor",
+              "DocumentMoniker": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
+              "RelativeDocumentMoniker": "InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
+              "ToolTip": "C:\\GS_Practice\\Blazor-App\\InstaFood\\InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
+              "RelativeToolTip": "InstaFood.Shared\\Components\\Product\\ProductComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T16:01:03.925Z"
+              "WhenOpened": "2024-10-11T05:34:05.198Z",
+              "EditorCaption": ""
             }
           ]
         }

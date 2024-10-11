@@ -1,7 +1,17 @@
 ﻿@page "/orders"
+@inject AppManager _appManager
 @attribute [Authorize]
-<h3>Orders</h3>
-
+<OrdersComponent user="@currentUser"></OrdersComponent>
 @code {
+    private CurrentUser? currentUser { get; set; }
 
+    protected override async Task OnInitializedAsync()
+    {
+        if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+        {
+            await Application.Current.MainPage.DisplayAlert("Connectivity Error", "No internet access", "Ok");
+            Application.Current.Quit();
+        }
+        currentUser = await _appManager.GetCurrentUser();
+    }
 }

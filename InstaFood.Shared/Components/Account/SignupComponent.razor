@@ -45,12 +45,7 @@
 </div>
 @code {
     // [Parameter] public EventCallback<string> HandleToken { get; set; }
-    private UserDTO signupModel { get; set; } = new()
-    {
-        Email="abc@gmail.com",
-        Name="Rohan",
-        Password="12345"
-    };
+    private UserDTO signupModel { get; set; }
     private bool IsAccessCode { get; set; } = false;
     private string? errorMessage;
     private async Task SignupAuthenticate()

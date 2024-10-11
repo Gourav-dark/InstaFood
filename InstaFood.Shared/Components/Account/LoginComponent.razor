@@ -24,11 +24,7 @@
 </div>
 @code {
     [Parameter] public EventCallback<string> HandleToken { get; set; }
-    private LoginDTO loginModel { get; set; } = new()
-    {
-        Email="sachin@gmail.com",
-        Password="12345"
-    };
+    private LoginDTO loginModel { get; set; } 
     private string? errorMessage;
     private async Task LoginAuthenticate()
     {

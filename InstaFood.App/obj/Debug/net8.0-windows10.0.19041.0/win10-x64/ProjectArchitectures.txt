@@ -1,0 +1,1 @@
+C:\GS_Practice\Blazor-App\InstaFood\InstaFood.App\InstaFood.App.csproj;x64
